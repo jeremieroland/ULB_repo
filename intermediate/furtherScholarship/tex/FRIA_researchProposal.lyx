@@ -1471,6 +1471,13 @@ options "plain"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 SUMMARY OF MASTER'S THESIS OR EQUIVALENT
 \end_layout
@@ -1486,17 +1493,23 @@ The Copenhagen Interpretation of Quantum Mechanics (QM) asserts that the
  description; doesn't it contradict the uncertainty principle, for instance.
  Most of these questions were found to have been addressed satisfactorily
  in the literature.
- There was, however, one question, whose answer has become the subject of
- his investigation; that of the paradoxical co-existence of contextuality
- and BM.
+ There was, however, one question, whose answer became the subject of my
+ investigation; that of the paradoxical co-existence of contextuality and
+ BM.
  In a theory that can predict the value of operators, the value an operator
- takes, must depend on the state of the system (including hidden variables).
+ takes must depend on the state of the system (including hidden variables).
  Contextuality arguments show that the value an operator takes, must also
  depend on the complete set of compatible operators, to be consistent with
  QM.
  BM being deterministic, is at complete odds with this notion.
- After various attempts he was able to show, that the notion of contextuality
- is in fact not necessary.
+ After various attempts (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:MS-visual"
+
+\end_inset
+
+) I was able to show, that the notion of contextuality is in fact not necessary.
  This was achieved by identifying another `classical property' and constructing
  a non-contextual toy-model, serving as a counter-example to the impossibility
  proof.
@@ -1515,9 +1528,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename flow.svg
+	filename flow.pdf
 	width 50page%
-	BoundingBox 0bp 0bp 744bp 1052bp
 
 \end_inset
 
@@ -1530,6 +1542,13 @@ status open
 \begin_layout Plain Layout
 Summary of progress flow.
  Bold faced titles represent new results.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MS-visual"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1548,6 +1567,13 @@ Summary of progress flow.
 
 \begin_layout Section
 ADDITIONAL COMMENTS (OPTIONAL)
+\end_layout
+
+\begin_layout Standard
+In the summers of 2015 I had been offered a DAAD-WISE fellowship for working
+ in Germany under Prof Otfried Guehne and Dr.
+ Ali Asadian.
+ I 
 \end_layout
 
 \begin_layout Section
