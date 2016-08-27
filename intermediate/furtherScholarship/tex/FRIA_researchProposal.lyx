@@ -1620,6 +1620,13 @@ cite[AA15] a test of local realism based on correlation measurements of
  expected to be relevant for this project.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 PhD WORK CALENDAR PER MONTH
 \end_layout
@@ -1634,7 +1641,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename calendar.pdf
-	width 95page%
+	width 90page%
 
 \end_inset
 
