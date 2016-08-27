@@ -874,7 +874,14 @@ Cryptography.
 
 \series default
  Constructing explicit optimal quantum protocols for cryptographic primitives
- will be among the second main targets of this project (see Figure XXX).
+ will be among the second main targets of this project (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Expected-Research-Flow"
+
+\end_inset
+
+).
  We will first focus on weak coin flipping, not only because it can lead
  via reductions to protocols for other primitives such as strong coin flipping
  and bit commitment
@@ -1055,7 +1062,14 @@ Work Plan
 \end_layout
 
 \begin_layout Standard
-Here is the general structure of our work plan (see also Figure XXX below).
+Here is the general structure of our work plan (see also 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Expected-Research-Flow"
+
+\end_inset
+
+ below).
 \end_layout
 
 \begin_layout Enumerate
@@ -1137,6 +1151,7 @@ Figures
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1144,9 +1159,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename researchDiagram.svg
+	filename researchDiagram.pdf
 	lyxscale 70
-	width 80page%
+	width 98text%
 
 \end_inset
 
@@ -1157,7 +1172,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Overview
+Expected Research Flow
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Expected-Research-Flow"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

@@ -21,11 +21,90 @@
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
-       id="marker4298"
+       id="marker6764"
        refX="0"
        refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Lend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path6766" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6646"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path6648"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6166"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path6168" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5654"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path5656"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5566"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5568"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4298"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
       <path
          inkscape:connector-curvature="0"
          transform="matrix(-0.8,0,0,-0.8,-10,0)"
@@ -207,8 +286,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70901007"
-     inkscape:cx="454.7728"
-     inkscape:cy="404.41508"
+     inkscape:cx="549.26413"
+     inkscape:cy="404.32802"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -247,68 +326,68 @@
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="rect11946"
        width="702.77728"
-       height="230.51642"
-       x="185.88403"
-       y="402.04575" />
+       height="192.43515"
+       x="174.79247"
+       y="440.12701" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="204.2258"
+       x="198.58687"
        y="608.0376"
        id="text4140-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4142-0"
-         x="204.2258"
+         x="198.58687"
          y="608.0376">A.2 Relation between discrt-time and cont-time protocols</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="582.14062"
-       y="741.07727"
+       y="701.07727"
        id="text4196-9"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4198-0"
          x="582.14062"
-         y="741.07727">C.1 better cont-time weak coin-flipping</tspan></text>
+         y="701.07727">C.1 better cont-time weak coin-flipping</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="582.14062"
-       y="795.15179"
+       y="755.15179"
        id="text4218"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4220"
          x="582.14062"
-         y="795.15179">C.2 optimal cont-time weak coin-flipping</tspan></text>
+         y="755.15179">C.2 optimal cont-time weak coin-flipping</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="582.14062"
-       y="849.22632"
+       y="809.22632"
        id="text4222"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4224"
          x="582.14062"
-         y="849.22632">C.3 other optimal cont-time primitives</tspan></text>
+         y="809.22632">C.3 other optimal cont-time primitives</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4722)"
-       d="m 649.94594,747.0384 0,31.30628"
+       d="m 649.94594,707.0384 0,31.30628"
        id="path4230"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="205.67844"
+       x="198.58687"
        y="554.90698"
        id="text4140-7-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4142-0-7"
-         x="205.67844"
+         x="198.58687"
          y="554.90698">A.1 Defns and properties; framework of cont-time communication protocols </tspan></text>
     <rect
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -332,40 +411,40 @@
          style="font-size:20px;fill:#666666">Cryptography</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4722-2)"
-       d="m 649.94594,803.0384 0,31.30628"
+       d="m 649.94594,763.0384 0,31.30628"
        id="path4230-2"
        inkscape:connector-curvature="0" />
     <rect
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="rect11923-5"
        width="35.278732"
-       height="282.81381"
-       x="417.44397"
-       y="-674.83215"
+       height="342.05133"
+       x="457.44397"
+       y="-697.20679"
        transform="matrix(0,1,-1,0,0,0)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#666666;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="394.53796"
-       y="440.60095"
+       x="360.24847"
+       y="480.60095"
        id="text11919-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan11921-7"
-         x="394.53796"
-         y="440.60095"
-         style="font-size:20px;fill:#666666">Communication Complexity</tspan></text>
+         x="360.24847"
+         y="480.60095"
+         style="font-size:20px;fill:#666666">Continuous Time Communication</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="582.14062"
-       y="699.63068"
+       y="899.40161"
        id="text4196-9-4"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4198-0-3"
          x="582.14062"
-         y="699.63068">C.5 cryptographic quantum comm. complexity</tspan></text>
+         y="899.40161">C.5 cryptographic quantum comm. complexity</tspan></text>
     <rect
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="rect11946-5"
@@ -383,11 +462,11 @@
          sodipodi:role="line"
          x="42.545666"
          y="829.19977"
-         id="tspan4658">B.2 Characterise comm. complexity of quantum state </tspan><tspan
+         id="tspan4658">B.2 Characterise comm. complexity of quantum </tspan><tspan
          sodipodi:role="line"
          x="42.545666"
          y="851.07477"
-         id="tspan4837">generation</tspan></text>
+         id="tspan4837">state generation</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -434,16 +513,16 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="582.14062"
-       y="897.22632"
+       y="857.22632"
        id="text4222-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4224-5"
          x="582.14062"
-         y="897.22632">C.4 discrete optimal primitives</tspan></text>
+         y="857.22632">C.4 discrete optimal primitives</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4722-2-4)"
-       d="m 649.94594,851.0384 0,31.30628"
+       d="m 649.94594,811.0384 0,31.30628"
        id="path4230-2-1"
        inkscape:connector-curvature="0" />
     <path
@@ -455,6 +534,36 @@
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4722-2-5-5)"
        d="m 234.57796,847.56539 0,31.30628"
        id="path4230-2-5-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5566)"
+       d="m 194.63757,557.30577 -64.87919,64.87919 0,69.11045 67.70002,67.70002"
+       id="path5542"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5654)"
+       d="m 190.40632,543.2016 -174.891731,174.89173 0,146.68339 21.861467,21.86147"
+       id="path5544"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4298)"
+       d="m 191.81674,603.84954 -49.3646,49.3646 -1.41042,31.02918 74.0469,74.0469"
+       id="path5546"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6166)"
+       d="m 435.81891,781.56211 70.52086,0 66.28961,66.28961"
+       id="path6158"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6646)"
+       d="m 863.86908,554.48494 119.39271,68.93141 0,29.79779 -59.32679,34.25234"
+       id="path6512"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6764)"
+       d="m 521.85436,894.39548 49.36461,0"
+       id="path6888"
        inkscape:connector-curvature="0" />
   </g>
 </svg>
