@@ -1509,7 +1509,9 @@ reference "fig:MS-visual"
 
 \end_inset
 
-) I was able to show, that the notion of contextuality is in fact not necessary.
+) I was able to show, that the notion of contextuality is in fact not necessary~
+\backslash
+cite[arXiv:].
  This was achieved by identifying another `classical property' and constructing
  a non-contextual toy-model, serving as a counter-example to the impossibility
  proof.
@@ -1571,9 +1573,28 @@ ADDITIONAL COMMENTS (OPTIONAL)
 
 \begin_layout Standard
 In the summers of 2015 I had been offered a DAAD-WISE fellowship for working
- in Germany under Prof Otfried Guehne and Dr.
+ in University of Siegen, Germany under Prof Otfried Guehne and Dr.
  Ali Asadian.
- I 
+ The work was related to extending the Bell's test to continuous `modular'
+ variables.
+ More specifically, we had proposed~
+\backslash
+cite[AA15] a test of local realism based on correlation measurements of
+ continuum valued functions of positions and momenta, known as modular variables.
+ The Wigner representations of these observables are bounded in phase space
+ and, therefore, the associated inequality holds for any state described
+ by a non-negative Wigner function.
+ This agrees with Bell’s remark that positive Wigner functions, serving
+ as a valid probability distribution over local (hidden) phase-space coordinates
+, do not reveal nonlocality.
+ We constructed a class of entangled states resulting in a violation of
+ the inequality and thus truly demonstrate nonlocality in phase space.
+ The states can be realized through grating techniques in spacelike separated
+ interferometric setups, which we have explicitly delineated.
+ The nonlocality is verified from the spatial correlation data that is collected
+ from the screens.
+ Results from this project were used in the MS thesis and they are also
+ expected to be relevant for this project.
 \end_layout
 
 \begin_layout Section
