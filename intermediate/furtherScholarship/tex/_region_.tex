@@ -1,0 +1,210 @@
+\message{ !name(FRIA_researchProposal.tex)}%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,british]{article}
+\usepackage{mathptmx}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=2cm,headsep=2cm,footskip=2cm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{esint}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\@ifundefined{date}{}{\date{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+
+%removes unecessary spaces from bullet listing
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+%for fitting more citations
+\usepackage{multicol}
+
+
+%to make separate references
+%\usepackage[sectionbib]{chapterbib}
+%\usepackage[english]{babel}
+%\usepackage{biblatex}
+\usepackage[style=authoryear,backend=biber,refsection=none]{biblatex}
+\addbibresource{{/home/atul/SparkleShare/ULB repo/intermediate/furtherScholarship/tex/MIS2015.bib}}
+\addbibresource{{/home/atul/SparkleShare/ULB repo/intermediate/furtherScholarship/tex/MIS2015}}
+\addbibresource{{MIS2015}}
+\addbibresource{{MIS2015.bib}}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\message{ !name(FRIA_researchProposal.tex) !offset(180) }
+\subsection{Research Project}
+
+\textbf{Continuous-time communication.} The main originality of my
+research project is to consider a continuous-time model to study communication
+complexity and cryptographic primitives. This is in sharp contrast
+with the state of the art where virtually all interactive communication
+models assume discrete-time protocols, where the communication travels
+back and forth between the communicating players. The continuous-time
+model I propose to study assumes that the players interact via a shared
+``messaging'' system that can be coupled continuously in time to their
+local workspace. More precisely, assume that Alice and Bob have private
+quantum registers $A$ and $B$, and share a common message register
+$M$. Alice can apply a Hamiltonian $H_{A}$ to her register and an
+interaction Hamiltonian $H_{AM}$ to the combined system composed
+of $A$ and $M$. Similarly Bob can apply $H_{B}$ and $H_{BM}$.
+The complete Hamiltonian may be written as $H=H_{A}\otimes\mathbb{I}_{MB}+H_{AM}\otimes\mathbb{I}_{B}+\mathbb{I}_{A}\otimes H_{MB}+\mathbb{I}_{AM}\otimes H_{B}.$
+Note that the traditional discrete-time communication model can be
+seen as a special case of this model where at any point in time, either
+$H_{AM}$ or $H_{BM}$ is zero. Conversely, any continuous-time protocol
+may be approached by a discrete-time protocol via a Trotter expansion.
+For this reason, the continuous-time model also provides a new approach
+to study the usual discrete-time model. The first task of our PhD
+project will be to formalize this general framework of continuous-time
+communication and its connection the usual discrete-time model, before
+we can use this framework in different contexts, namely communication
+complexity and the design of cryptographic primitives. 
+
+\textbf{Communication complexity.} We can define a continuous-time
+model of communication complexity by considering the time required
+to evolve the system to the desired state as a measure of complexity
+(for this measure to be non-trivial, we need to impose energy constraints,
+in that the norms of $H_{AM}$ and $H_{BM}$ must be bounded by some
+constant $\le1$). An important task will be to prove tight bounds
+between the usual (discrete-time) model and this new model, using
+the general connection described above. From there, we propose to
+develop new techniques to bound the continuous-time communication
+complexity, which will in turn imply new bounds for the usual model.
+Note that the most powerful known methods to prove bounds on communication
+complexity require combinatorial techniques, due to the combinatorial
+structure of interactive protocols where messages are sent back and
+forth. It is quite likely that the algebraic structure of continuous-time
+protocols might lead to a simpler analysis and therefore bound techniques
+that are easier to apply (note that there also exist algebraic bound
+techniques for the usual model of communication complexity, but while
+they are typically easier to apply they are also less powerful and
+therefore sometimes not sufficient). Another modification of the model
+we propose to exploit is an extension to quantum state generation,
+where instead of computing a function $f(x,y)$ (where $x$ and $y$
+are Alice\textquoteright s and Bob\textquoteright s inputs), the goal
+is to create a joint quantum state $\psi_{xy}$. This extension was
+quite useful to simplify the study, up to the full characterization,
+of quantum query complexity, and we hope to benefit from the same
+advantage here. Indeed, even if the initial and final states of a
+protocol are taken from a finite set of possibilities, as is the case
+when computing a function, intermediate states of the protocol can
+be arbitrary, and focusing on the singular properties of the states
+at the beginning and the end of the protocol might obscure the general
+dynamical properties. This is especially true for the continuous-time
+model I propose to explore, since in that case the intermediate states
+of the protocol follow a continuous path in the Hilbert space. In
+order to design new techniques to prove lower bounds on this extended
+model, I propose to combine these new ideas to recent techniques for
+the usual discrete-time models, in particular techniques based on
+information theory, as well as bounds derived from the notion of Bell
+inequalities studied in the context of quantum non-locality {[}see
+above, maybe add the same references here{]}. Finally, we also intend
+to study continuous time models in the purview of classical communication
+complexity where the Schrödinger equation is replaced by appropriate
+Euler Lagrange equations and is expected to yield a unified characterization
+of communication complexity. We intend to study similar questions;
+equivalence between continuous and discrete models and characterization
+of complexity models using new bounding techniques. 
+
+\textbf{Cryptography.} Constructing explicit optimal quantum protocols
+for cryptographic primitives will be among the second main targets
+of this project (see Figure XXX). We will first focus on weak coin
+flipping, not only because it can lead via reductions to protocols
+for other primitives such as strong coin flipping and bit commitment~\cite{CK09,CK11},
+but also because my promoter has already obtained some promising preliminary
+results. More precisely, he has recently discovered that the best
+known quantum protocol for weak coin flipping~\cite{Mochon05}, achieving
+bias $1/6$, can be obtained by discretizing a continuous-time communication
+protocol of the type we have defined above. This construction gives
+more insight on how the protocol works and therefore provides a new
+approach to extend it and break the limit of bias $1/6$, which resisted
+all researchers for more than a decade. Indeed, while Mochon's original
+construction requires taking the limit of an infinite number of discrete
+steps, this new construction immediately yields a protocol as a continuous
+evolution, which is easier to analyze and provides more intuition.
+Our strategy will be to exploit this new intuition to finally break
+the barrier corresponding to bias $1/6$. In order to do so, we propose
+to adapt to this framework a technique introduced by Feynman in his
+early works on quantum computers~\cite{Feynman86}, consisting in
+constructing the history state of a computation, that is, $\left|\Psi\right\rangle =\sum_{t=0}^{T}\left|\psi_{t}\right\rangle \left|t\right\rangle $.
+We believe that this might be the key to obtaining better biases,
+because this states involves at the same ``physical time'' all states
+of the protocol at different ``logical'' times, and therefore has
+a structure which is very similar to the so-called ``time-independent
+point games'' that Mochon used to prove (in a non-constructive manner)
+the existence of protocols with arbitrarily low biases~\cite{Mochon07}.
+In the case of a continuous-time protocol, the history state reads
+$\left|\Psi\right\rangle =\int_{t=0}^{T}\left|\psi(t)\right\rangle \left|t\right\rangle dt$,
+where the clock register $\left|t\right\rangle $ holds a continuous
+variable, and is therefore infinite-dimensional. The fact that the
+time-independent point games for bias less than $1/6$ might actually
+correspond to a continuous-time history state, which would imply that
+an infinite-dimensional register is necessary to translate with no
+loss the point games into explicit protocols, could explain all the
+failed attempts at obtaining such protocols. Once a first protocol
+with bias less than $1/6$ is obtained, the obvious next step will
+be to decrease the bias further, up to an arbitrary low bias, that
+is, an optimal protocol. In order to do so, our main strategy will
+be to iterate the process allowing to break the initial barrier, combining
+history states, continuous-time evolution and continuous variables.
+Next, we will turn our attention to other cryptographic primitives
+such as strong coin flipping and bit commitment. It is known that
+an optimal quantum protocol for weak coin flipping immediately yields
+by reduction optimal protocols for these other primitives as well~\cite{CK09,CK11},
+but it is quite likely that the reduction leads to unnecessary overhead
+in terms of time and space. Our goal will therefore be to make these
+protocols as efficient as possible by simplifying the protocols obtained
+by reduction, or by directly constructing optimal protocols for these
+primitives using similar techniques as for weak coin flipping. From
+optimal continuous-time quantum protocols for these cryptographic
+primitives, the next final step will be to derive explicit discrete-time
+protocols. Here we will use the general framework we developed to
+study continuous-time quantum communication protocols and their connection
+with discrete-time protocols. Again, an important challenge will be
+to reduce the overhead in terms of time and space. However, we also
+plan to use optical quadratures to implement continuous variable registers,
+an overarching goal being to obtain protocols that only involve operations
+that could be realistically implemented. Specifically, a decomposition
+into Gaussian operations would be preferred to enable easy experimental
+implementation. The effect of imperfections must also be modelled
+to quantify loss of security and robustness thereof. 
+
+Finally, we also intend to explore the cryptographic variant of quantum
+communication complexity, where the players wish to reveal as little
+information as possible about their inputs $(x,y)$ while computing
+$f(x,y)$. This can be achieved by first considering an \textquoteleft honest-but-curious\textquoteright{}
+model which is classically equivalent to information complexity. The
+quantum version is, however, not as clear where multiple definitions
+of quantum information complexity coexist but they do not necessarily
+yield the actual information achievable by the players. We intend
+to arrive at a more suitable definition using new techniques based
+on a continuous-time model. The malicious case can be subsequently
+considered with the history state being harnessed to detect cheating.
+
+
+
+
+\message{ !name(FRIA_researchProposal.tex) !offset(331) }
+
+\end{document}

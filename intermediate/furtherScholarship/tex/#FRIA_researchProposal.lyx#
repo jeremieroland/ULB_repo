@@ -1,0 +1,1562 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+
+%removes unecessary spaces from bullet listing
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+%for fitting more citations
+\usepackage{multicol}
+
+
+%to make separate references
+%\usepackage[sectionbib]{chapterbib}
+%\usepackage[english]{babel}
+%\usepackage{biblatex}
+\usepackage[style=authoryear,backend=biber,refsection=none]{biblatex}
+\addbibresource{{/home/atul/SparkleShare/ULB repo/intermediate/furtherScholarship/tex/MIS2015.bib}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command biber style=authoryear,backend=biber,refsection=none
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align right
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+large{FRIA CALL 2016 - FRIA-B1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Full name of the applicant
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atul Singh Arora 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SEMAPHORE Application ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29379721
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+huge{SCIENTIFIC SECTION OF THE PROPOSAL}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Main language chosen = English
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+DESCRIPTION OF THE RESEARCH PROJECT
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{refsection}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Goals of the Research
+\end_layout
+
+\begin_layout Standard
+Current information processing models are fundamentally limited in terms
+ of speed, efficiency, security and privacy, as they assume a simplified
+ representation of the world, relying on classical physics.
+ In the past few decades, research in the field of quantum information processin
+g has been carried out to break this barrier by exploiting quantum phenomena.
+ This has led to breakthrough results such as Bennett and Brassard's information
+aly secure quantum key distribution protocol
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BB84"
+
+\end_inset
+
+ and Shor's efficient factoring algorithm
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shor94"
+
+\end_inset
+
+ which suggest that future large-scale network of computing devices will
+ be able to communicate both efficiently and securely using quantum resources.
+\end_layout
+
+\begin_layout Standard
+Despite steady progress, including practical implementations of quantum
+ key distribution schemes, there are both technological limitations and
+ theoretical barriers.
+ The development of algorithms and protocols exploiting such a quantum network
+ to its full capacity is also hindered by the inherent difficulty at characteriz
+ing interactive quantum communication models.
+ As a consequence, only limited techniques are known for studying quantum
+ communication complexity, and the development of fundamental cryptographic
+ primitives such as quantum coin flipping requires complicated tools that
+ make it extremely hard to derive explicit protocols.
+\end_layout
+
+\begin_layout Standard
+The overall aim of this research project is to take a fresh start towards
+ quantum communication protocols by approaching their theoretical foundations
+ from a new perspective.
+ More precisely, our objectives are the following: 
+\end_layout
+
+\begin_layout Itemize
+The development of a new framework to study quantum communication protocols
+ based on continuous
+\begin_inset space ~
+\end_inset
+
+time Hamiltonian evolution.
+ 
+\end_layout
+
+\begin_layout Itemize
+New techniques to obtain strong lower bounds in quantum communication complexity
+ and matching efficient protocols.
+ 
+\end_layout
+
+\begin_layout Itemize
+Practical and optimal quantum protocols for cryptographic primitives, in
+ particular for coin flipping.
+\end_layout
+
+\begin_layout Subsection
+State of the Art
+\end_layout
+
+\begin_layout Standard
+Communication complexity is a computational model first introduced by Yao
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Yao79"
+
+\end_inset
+
+ where two distant players, Alice and Bob, each receive an input, 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+, respectively, and their goal is to compute a function 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+.
+ To this end, they must communicate, and the communication complexity is
+ defined as the minimum number of bits exchanged by Alice and Bob in order
+ to compute the function with error at most 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ In addition to being a quite natural computational model on its own, communicat
+ion complexity also found many applications, not only for proving bounds
+ via reductions for other computational models (decision trees, streaming
+ algorithms), but also for more practical problems such as the design of
+ VLSI circuits (see also [KN97->add to bibtex file]).
+ 
+\end_layout
+
+\begin_layout Standard
+For this reason, communication complexity has been extensively studied but
+ progress has been quite slow due to the difficulty at developing good lower
+ and upper bound techniques.
+ In particular, the famous log-rank conjecture [LS88->add to bibtex file],
+ which states that the communication complexity of a function is bounded
+ from above by a constant power of the rank of its communication matrix
+ 
+\begin_inset Formula $M_{x,y}=f(x,y)$
+\end_inset
+
+ remains open despite decades of attempts to prove it.
+ 
+\end_layout
+
+\begin_layout Standard
+Over the last few years, a new approach to communication complexity problems
+ based on information theory [define this? Not sure it is necessary] has
+ attracted a lot of interest.
+ This approach can not only be used to prove lower bounds on the usual model,
+ but also leads to a new model called information complexity, where the
+ cost of a communication protocol no longer corresponds to the length of
+ the communicated messages, but rather to their information content (see
+ e.g.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bra12"
+
+\end_inset
+
+).
+ Information complexity is also equivalent to amortized communication complexity
+ [BW12->add to bibtex file], and therefore leads to an interactive analogue
+ of Shannon compression [define shannon compression first maybe? I think
+ it is fine].
+ It has recently been shown that some lower bound techniques for communication
+ complexity also lower bound information complexity
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "KLL+14"
+
+\end_inset
+
+.
+ These techniques draw an interesting connection with the notion of Bell
+ inequalities studied in the context of quantum nonlocality, which makes
+ it possible to define natural extensions of these lower bound techniques
+ to quantum communication complexity
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LLR12"
+
+\end_inset
+
+, an extension of communication complexity where the players can exchange
+ quantum messages.
+ This line of research is quite promising as the set of lower bound techniques
+ for quantum communication complexity is currently even more limited than
+ for its classical counterpart.
+ 
+\end_layout
+
+\begin_layout Standard
+Note that closely related computational models are much better understood,
+ such as quantum query complexity [define it? WE could say that this is
+ the quantum analogue of query complexity or “decision tree complexity”,
+ but we don’t have enough space to define it in more details], which in
+ the bounded-error case is now known to be characterized by a semidefinite
+ program called the adversary bound
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LMRSS11"
+
+\end_inset
+
+.
+ The proof of this fundamental result is facilitated by considering a generaliza
+tion of the model where the goal is not to compute a function but rather
+ to generate a quantum state
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AMRR11"
+
+\end_inset
+
+.
+ More recently, an alternative proof of this was provided by my promoter
+ by considering a continuous-time model of quantum query complexity
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BR14"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Coin flipping is a fundamental cryptographic primitive where two distrustful
+ parties need to remotely generate a shared unbiased random bit.
+ A cheating player can try to bias the output bit towards a preferred value.
+ For weak coin flipping, each player has a given preferred value: for example,
+ Alice wants to bias towards 0 while Bob wants to bias towards 1.
+ A weak coin-flipping protocol has bias 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ if neither Alice nor Bob can force the outcome towards her/his preferred
+ value with probability more than 
+\begin_inset Formula $1/2+\epsilon$
+\end_inset
+
+.
+ For strong coin flipping, there is no a priori preferred values, and the
+ protocol has bias 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ if neither Alice nor Bob can force the outcome towards any value with probabili
+ty more than 
+\begin_inset Formula $1/2+\epsilon$
+\end_inset
+
+.
+ Under information-theoretic security, neither weak nor strong coin flipping
+ is possible with non-trivial bias in the classical setting: there always
+ exists a player that can force any outcome with probability 1.
+ However, the situation is quite different in the quantum world.
+ Indeed, strong coin-flipping protocols with bias strictly less than 
+\begin_inset Formula $1/2$
+\end_inset
+
+ have been shown, the best known explicit protocol having bias 
+\begin_inset Formula $1/4$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ambainis04b"
+
+\end_inset
+
+.
+ Nevertheless, Kitaev showed a lower bound of 
+\begin_inset Formula $1/\sqrt{2}-1/2$
+\end_inset
+
+ for the bias of any quantum strong coin flipping
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kitaev03"
+
+\end_inset
+
+, so an arbitrary small bias is not possible.
+ 
+\end_layout
+
+\begin_layout Standard
+As for weak coin flipping, explicit protocols have been shown with bias
+ as low as 
+\begin_inset Formula $1/6$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mochon05"
+
+\end_inset
+
+.
+ In a breakthrough result, Mochon even proved in 2007 the existence of a
+ quantum weak coin-flipping protocol with bias 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ for any 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, hence showing that near-perfect weak coin flipping is theoretically possible
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mochon07"
+
+\end_inset
+
+.
+ This fundamental result for quantum cryptography unfortunately comes with
+ the important drawback that the proof of existence is non-constructive:
+ indeed, it is based on successive reductions from a protocol to different
+ versions of so-called point games, a formalism introduced by Kitaev in
+ order to study coin flipping.
+ As a consequence, the structure of the protocol whose existence is proved
+ is unfortunately lost during a long and technical sequence of reductions
+ (the article is 80-page long).
+ Moreover, this article was never peer-reviewed, and it took years before
+ the proof was systematically verified by independent researchers.
+ While this verification also led to a simplified version of the proof
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ACG+14"
+
+\end_inset
+
+ (only 50-page long!), to this date, more than 9 years after the original
+ proof of existence, nobody has been able to turn it into an explicit weak
+ coin-flipping protocol.
+ This is not due to a lack of trying: experts have used various approaches
+ ranging from distilling a protocol from the theoretical proof of existence
+ to numerical search.
+ For example, despite many optimization techniques, the extensive numerical
+ calculations in
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NST14"
+
+\end_inset
+
+ did not return a single protocol with a better bias than what was previously
+ known.
+ While this last reference concerns strong coin-flipping protocols, the
+ problems are closely related, as it was shown that an explicit quantum
+ protocol for weak coin flipping would provide, via black-box reductions,
+ optimal protocols for strong coin flipping
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CK09"
+
+\end_inset
+
+ and oblivious transfer (another fundamental cryptographic primitive) as
+ well
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CK11"
+
+\end_inset
+
+.
+ This makes the absence of explicit weak coin-flipping protocols even more
+ frustrating.
+\end_layout
+
+\begin_layout Subsection
+Research Project
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Continuous-time communication.
+
+\series default
+ The main originality of my research project is to consider a continuous-time
+ model to study communication complexity and cryptographic primitives.
+ This is in sharp contrast with the state of the art where virtually all
+ interactive communication models assume discrete-time protocols, where
+ the communication travels back and forth between the communicating players.
+ The continuous-time model I propose to study assumes that the players interact
+ via a shared ``messaging'' system that can be coupled continuously in time
+ to their local workspace.
+ More precisely, assume that Alice and Bob have private quantum registers
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, and share a common message register 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Alice can apply a Hamiltonian 
+\begin_inset Formula $H_{A}$
+\end_inset
+
+ to her register and an interaction Hamiltonian 
+\begin_inset Formula $H_{AM}$
+\end_inset
+
+ to the combined system composed of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Similarly Bob can apply 
+\begin_inset Formula $H_{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $H_{BM}$
+\end_inset
+
+.
+ The complete Hamiltonian may be written as 
+\begin_inset Formula $H=H_{A}\otimes\mathbb{I}_{MB}+H_{AM}\otimes\mathbb{I}_{B}+\mathbb{I}_{A}\otimes H_{MB}+\mathbb{I}_{AM}\otimes H_{B}.$
+\end_inset
+
+ Note that the traditional discrete-time communication model can be seen
+ as a special case of this model where at any point in time, either 
+\begin_inset Formula $H_{AM}$
+\end_inset
+
+ or 
+\begin_inset Formula $H_{BM}$
+\end_inset
+
+ is zero.
+ Conversely, any continuous-time protocol may be approached by a discrete-time
+ protocol via a Trotter expansion.
+ For this reason, the continuous-time model also provides a new approach
+ to study the usual discrete-time model.
+ The first task of our PhD project will be to formalize this general framework
+ of continuous-time communication and its connection the usual discrete-time
+ model, before we can use this framework in different contexts, namely communica
+tion complexity and the design of cryptographic primitives.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Communication complexity.
+
+\series default
+ We can define a continuous-time model of communication complexity by considerin
+g the time required to evolve the system to the desired state as a measure
+ of complexity (for this measure to be non-trivial, we need to impose energy
+ constraints, in that the norms of 
+\begin_inset Formula $H_{AM}$
+\end_inset
+
+ and 
+\begin_inset Formula $H_{BM}$
+\end_inset
+
+ must be bounded by some constant 
+\begin_inset Formula $\le1$
+\end_inset
+
+).
+ An important task will be to prove tight bounds between the usual (discrete-tim
+e) model and this new model, using the general connection described above.
+ From there, we propose to develop new techniques to bound the continuous-time
+ communication complexity, which will in turn imply new bounds for the usual
+ model.
+ Note that the most powerful known methods to prove bounds on communication
+ complexity require combinatorial techniques, due to the combinatorial structure
+ of interactive protocols where messages are sent back and forth.
+ It is quite likely that the algebraic structure of continuous-time protocols
+ might lead to a simpler analysis and therefore bound techniques that are
+ easier to apply (note that there also exist algebraic bound techniques
+ for the usual model of communication complexity, but while they are typically
+ easier to apply they are also less powerful and therefore sometimes not
+ sufficient).
+ Another modification of the model we propose to exploit is an extension
+ to quantum state generation, where instead of computing a function 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ (where 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are Alice’s and Bob’s inputs), the goal is to create a joint quantum state
+ 
+\begin_inset Formula $\psi_{xy}$
+\end_inset
+
+.
+ This extension was quite useful to simplify the study, up to the full character
+ization, of quantum query complexity, and we hope to benefit from the same
+ advantage here.
+ Indeed, even if the initial and final states of a protocol are taken from
+ a finite set of possibilities, as is the case when computing a function,
+ intermediate states of the protocol can be arbitrary, and focusing on the
+ singular properties of the states at the beginning and the end of the protocol
+ might obscure the general dynamical properties.
+ This is especially true for the continuous-time model I propose to explore,
+ since in that case the intermediate states of the protocol follow a continuous
+ path in the Hilbert space.
+ In order to design new techniques to prove lower bounds on this extended
+ model, I propose to combine these new ideas to recent techniques for the
+ usual discrete-time models, in particular techniques based on information
+ theory, as well as bounds derived from the notion of Bell inequalities
+ studied in the context of quantum non-locality [see above, maybe add the
+ same references here].
+ Finally, we also intend to study continuous time models in the purview
+ of classical communication complexity where the Schrödinger equation is
+ replaced by appropriate Euler Lagrange equations and is expected to yield
+ a unified characterization of communication complexity.
+ We intend to study similar questions; equivalence between continuous and
+ discrete models and characterization of complexity models using new bounding
+ techniques.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cryptography.
+
+\series default
+ Constructing explicit optimal quantum protocols for cryptographic primitives
+ will be among the second main targets of this project (see Figure XXX).
+ We will first focus on weak coin flipping, not only because it can lead
+ via reductions to protocols for other primitives such as strong coin flipping
+ and bit commitment
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CK09,CK11"
+
+\end_inset
+
+, but also because my promoter has already obtained some promising preliminary
+ results.
+ More precisely, he has recently discovered that the best known quantum
+ protocol for weak coin flipping
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mochon05"
+
+\end_inset
+
+, achieving bias 
+\begin_inset Formula $1/6$
+\end_inset
+
+, can be obtained by discretizing a continuous-time communication protocol
+ of the type we have defined above.
+ This construction gives more insight on how the protocol works and therefore
+ provides a new approach to extend it and break the limit of bias 
+\begin_inset Formula $1/6$
+\end_inset
+
+, which resisted all researchers for more than a decade.
+ Indeed, while Mochon's original construction requires taking the limit
+ of an infinite number of discrete steps, this new construction immediately
+ yields a protocol as a continuous evolution, which is easier to analyze
+ and provides more intuition.
+ Our strategy will be to exploit this new intuition to finally break the
+ barrier corresponding to bias 
+\begin_inset Formula $1/6$
+\end_inset
+
+.
+ In order to do so, we propose to adapt to this framework a technique introduced
+ by Feynman in his early works on quantum computers
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Feynman86"
+
+\end_inset
+
+, consisting in constructing the history state of a computation, that is,
+ 
+\begin_inset Formula $\left|\Psi\right\rangle =\sum_{t=0}^{T}\left|\psi_{t}\right\rangle \left|t\right\rangle $
+\end_inset
+
+.
+ We believe that this might be the key to obtaining better biases, because
+ this states involves at the same ``physical time'' all states of the protocol
+ at different ``logical'' times, and therefore has a structure which is
+ very similar to the so-called ``time-independent point games'' that Mochon
+ used to prove (in a non-constructive manner) the existence of protocols
+ with arbitrarily low biases
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mochon07"
+
+\end_inset
+
+.
+ In the case of a continuous-time protocol, the history state reads 
+\begin_inset Formula $\left|\Psi\right\rangle =\int_{t=0}^{T}\left|\psi(t)\right\rangle \left|t\right\rangle dt$
+\end_inset
+
+, where the clock register 
+\begin_inset Formula $\left|t\right\rangle $
+\end_inset
+
+ holds a continuous variable, and is therefore infinite-dimensional.
+ The fact that the time-independent point games for bias less than 
+\begin_inset Formula $1/6$
+\end_inset
+
+ might actually correspond to a continuous-time history state, which would
+ imply that an infinite-dimensional register is necessary to translate with
+ no loss the point games into explicit protocols, could explain all the
+ failed attempts at obtaining such protocols.
+ Once a first protocol with bias less than 
+\begin_inset Formula $1/6$
+\end_inset
+
+ is obtained, the obvious next step will be to decrease the bias further,
+ up to an arbitrary low bias, that is, an optimal protocol.
+ In order to do so, our main strategy will be to iterate the process allowing
+ to break the initial barrier, combining history states, continuous-time
+ evolution and continuous variables.
+ Next, we will turn our attention to other cryptographic primitives such
+ as strong coin flipping and bit commitment.
+ It is known that an optimal quantum protocol for weak coin flipping immediately
+ yields by reduction optimal protocols for these other primitives as well
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CK09,CK11"
+
+\end_inset
+
+, but it is quite likely that the reduction leads to unnecessary overhead
+ in terms of time and space.
+ Our goal will therefore be to make these protocols as efficient as possible
+ by simplifying the protocols obtained by reduction, or by directly constructing
+ optimal protocols for these primitives using similar techniques as for
+ weak coin flipping.
+ From optimal continuous-time quantum protocols for these cryptographic
+ primitives, the next final step will be to derive explicit discrete-time
+ protocols.
+ Here we will use the general framework we developed to study continuous-time
+ quantum communication protocols and their connection with discrete-time
+ protocols.
+ Again, an important challenge will be to reduce the overhead in terms of
+ time and space.
+ However, we also plan to use optical quadratures to implement continuous
+ variable registers, an overarching goal being to obtain protocols that
+ only involve operations that could be realistically implemented.
+ Specifically, a decomposition into Gaussian operations would be preferred
+ to enable easy experimental implementation.
+ The effect of imperfections must also be modelled to quantify loss of security
+ and robustness thereof.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, we also intend to explore the cryptographic variant of quantum
+ communication complexity, where the players wish to reveal as little informatio
+n as possible about their inputs 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ while computing 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+.
+ This can be achieved by first considering an ‘honest-but-curious’ model
+ which is classically equivalent to information complexity.
+ The quantum version is, however, not as clear where multiple definitions
+ of quantum information complexity coexist but they do not necessarily yield
+ the actual information achievable by the players.
+ We intend to arrive at a more suitable definition using new techniques
+ based on a continuous-time model.
+ The malicious case can be subsequently considered with the history state
+ being harnessed to detect cheating.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Work Plan
+\end_layout
+
+\begin_layout Standard
+Here is the general structure of our work plan (see also Figure XXX below).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}[label=
+\backslash
+alph*]
+\backslash
+item "hello" 
+\backslash
+end{enumerate}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+(A) Continuous-time communication 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+1.
+ Basic definition and properties of the general framework of continuous-time
+ communication protocols 
+\end_layout
+
+\begin_layout Enumerate
+2.
+ Relation with discrete-time communication protocols 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+(B) Quantum communication complexity 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+1.
+ Reductions between continuous- and discrete-time quantum communication
+ complexity 
+\end_layout
+
+\begin_layout Enumerate
+2.
+ Characterization of communication complexity of quantum state generation
+ 
+\end_layout
+
+\begin_layout Enumerate
+3.
+ Characterization of classical communication complexity from continuous-time
+ model 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+(C) Cryptography 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+1.
+ Continuous-time weak coin-flipping protocol with bias less than 1/6.
+ 
+\end_layout
+
+\begin_layout Enumerate
+2.
+ Optimal continuous-time weak coin-flipping protocol 
+\end_layout
+
+\begin_layout Enumerate
+3.
+ Optimal continuous-time protocols for other primitives 
+\end_layout
+
+\begin_layout Enumerate
+4.
+ Explicit discrete-time protocols for cryptographic primitives 
+\end_layout
+
+\begin_layout Enumerate
+5.
+ Cryptographic quantum communication complexity
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Figures
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename researchDiagram.svg
+	lyxscale 70
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Overview
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+printbibliography
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+printbibliography
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{refsection}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ACTIVITIES REPORT ON THE FIRST YEAR OF DOCTORATE
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+DESCRIPTION OF THE WORK ENVIRONMENT
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefsection
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{refsection}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Centre for Quantum Information and Communication (QuIC) has been active
+ in quantum information sciences for more than fifteen years, with research
+ contributions ranging from fundamental questions such as quantum measurement,
+ quantum entanglement, or quantum nonlocality, to more information-flavored
+ issues such as quantum communication, quantum cryptography, or quantum
+ algorithms.
+ It has invented and contributed to the demonstration of the first continuous-va
+riable (Gaussian) quantum cryptographic protocol.
+ It currently holds two patents, and has published numerous scientific papers
+ among which two in the journal Nature, one in Nature Photonics, and one
+ in Nature Communications.
+ 
+\end_layout
+
+\begin_layout Standard
+QuIC also benefits from a large network of collaboration with other institutions
+ throughout Europe (e.g.
+ IRIF Paris, CWI Amsterdam, Cambridge, ULatvia), North America (e.g.
+ MIT, UWaterloo, BBN Technologies) and Asia (CQT Singapore), and participated
+ in many collaborative European projects on quantum information, including
+ most recently SECOQC, QAP, QUROPE, COVAQIAL (coordinator), COMPAS (coordinator)
+, QCS, DIQIP, HIPERCOM (coordinator), QALGO and QUCHIP.
+ 
+\end_layout
+
+\begin_layout Standard
+A large fraction of QuIC research activities has focused on quantum information
+ with continuous-variable carriers.
+ In particular, the QuIC has reported on the first demonstration of continuous-v
+ariable quantum key distribution in collaboration with the Institut d'Optique
+ d'Orsay.
+ More recently, the QuIC has developed an important research activity in
+ the general field of quantum computer science.
+ In particular, my promoter has made important contributions to adiabatic
+ quantum computation
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RC02,akr10-pnas,KMOR15,BR14"
+
+\end_inset
+
+, algorithms by quantum walks
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mnrs11-sicomp,KMOR15"
+
+\end_inset
+
+, quantum query complexity
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AMRR11,LR13,BR14"
+
+\end_inset
+
+ and communication complexity
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LLR12,KLL+14,FJKL+15"
+
+\end_inset
+
+, all these topics being directly or indirectly connected to our doctoral
+ research project.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+printbibliography
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{refsection}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "MIS-2015"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+SUMMARY OF MASTER'S THESIS OR EQUIVALENT
+\end_layout
+
+\begin_layout Standard
+The Copenhagen Interpretation of Quantum Mechanics (QM) asserts that the
+ wave-function is the most complete description, which entails that there
+ is an inherent fuzziness in our description of nature.
+ There exists a completion of QM, known as Bohmian Mechanics (BM), which
+ replaces this fuzziness with precision, and re-introduces notions of physical
+ trajectories.
+ Various interesting questions arise, solely by the existence of such a
+ description; doesn't it contradict the uncertainty principle, for instance.
+ Most of these questions were found to have been addressed satisfactorily
+ in the literature.
+ There was, however, one question, whose answer has become the subject of
+ his investigation; that of the paradoxical co-existence of contextuality
+ and BM.
+ In a theory that can predict the value of operators, the value an operator
+ takes, must depend on the state of the system (including hidden variables).
+ Contextuality arguments show that the value an operator takes, must also
+ depend on the complete set of compatible operators, to be consistent with
+ QM.
+ BM being deterministic, is at complete odds with this notion.
+ After various attempts he was able to show, that the notion of contextuality
+ is in fact not necessary.
+ This was achieved by identifying another `classical property' and constructing
+ a non-contextual toy-model, serving as a counter-example to the impossibility
+ proof.
+ The toy model has been generalised to a discrete but arbitrarily sized
+ Hilbert space, consistent with all predictions of QM.
+ Implications of violation of this `classical property' were explored, in
+ particular, to the notion of non-locality.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename flow.svg
+	width 50page%
+	BoundingBox 0bp 0bp 744bp 1052bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Summary of progress flow.
+ Bold faced titles represent new results.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ADDITIONAL COMMENTS (OPTIONAL)
+\end_layout
+
+\begin_layout Section
+PhD WORK CALENDAR PER MONTH
+\end_layout
+
+\end_body
+\end_document
