@@ -1634,6 +1634,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename calendar.pdf
+	width 95page%
 
 \end_inset
 
