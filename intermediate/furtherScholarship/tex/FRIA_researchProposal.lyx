@@ -1620,15 +1620,12 @@ cite[AA15] a test of local realism based on correlation measurements of
  expected to be relevant for this project.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 PhD WORK CALENDAR PER MONTH
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
@@ -1652,7 +1649,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-PhD tentative work schedule
+PhD tentative work schedule 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PhD-tentative-work"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
