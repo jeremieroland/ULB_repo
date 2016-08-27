@@ -1511,7 +1511,7 @@ reference "fig:MS-visual"
 
 ) I was able to show, that the notion of contextuality is in fact not necessary~
 \backslash
-cite[arXiv:].
+cite[arXiv:1607.03498,MSThesis].
  This was achieved by identifying another `classical property' and constructing
  a non-contextual toy-model, serving as a counter-example to the impossibility
  proof.
@@ -1523,6 +1523,7 @@ cite[arXiv:].
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1531,7 +1532,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename flow.pdf
-	width 50page%
+	width 45page%
 
 \end_inset
 
@@ -1576,7 +1577,7 @@ In the summers of 2015 I had been offered a DAAD-WISE fellowship for working
  in University of Siegen, Germany under Prof Otfried Guehne and Dr.
  Ali Asadian.
  The work was related to extending the Bell's test to continuous `modular'
- variables.
+ variables which is closely related to .
  More specifically, we had proposed~
 \backslash
 cite[AA15] a test of local realism based on correlation measurements of
@@ -1588,9 +1589,9 @@ cite[AA15] a test of local realism based on correlation measurements of
  as a valid probability distribution over local (hidden) phase-space coordinates
 , do not reveal nonlocality.
  We constructed a class of entangled states resulting in a violation of
- the inequality and thus truly demonstrate nonlocality in phase space.
- The states can be realized through grating techniques in spacelike separated
- interferometric setups, which we have explicitly delineated.
+ the inequality and thus truly demonstrated nonlocality in phase space.
+ We showed that the states can be realized through grating techniques in
+ spacelike separated interferometric setups.
  The nonlocality is verified from the spatial correlation data that is collected
  from the screens.
  Results from this project were used in the MS thesis and they are also
