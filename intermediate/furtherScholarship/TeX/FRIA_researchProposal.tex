@@ -110,223 +110,42 @@ Main language chosen = English
 
 \subsection{Goals of the Research}
 
-Current information processing models are fundamentally limited in
-terms of speed, efficiency, security and privacy, as they assume a
-simplified representation of the world, relying on classical physics.
-In the past few decades, research in the field of quantum information
-processing has been carried out to break this barrier by exploiting
-quantum phenomena. This has led to breakthrough results such as Bennett
-and Brassard's informationaly secure quantum key distribution protocol~\cite{BB84}
-and Shor's efficient factoring algorithm~\cite{shor94} which suggest
-that future large-scale network of computing devices will be able
-to communicate both efficiently and securely using quantum resources.
+Current information processing models are fundamentally limited in terms of speed, efficiency, security and privacy, as they assume a simplified representation of the world, relying on classical physics. In the past few decades, research in the field of quantum information processing has been carried out to break this barrier by exploiting quantum phenomena. This has led to breakthrough results such as Bennett and Brassard's informationaly secure quantum key distribution protocol~\cite{BB84} and Shor's efficient factoring algorithm~\cite{shor94} which suggest that future large-scale network of computing devices will be able to communicate both efficiently and securely using quantum resources. 
 
-Despite steady progress, including practical implementations of quantum
-key distribution schemes, there are both technological limitations
-and theoretical barriers. The development of algorithms and protocols
-exploiting such a quantum network to its full capacity is also hindered
-by the inherent difficulty at characterizing interactive quantum communication
-models. As a consequence, only limited techniques are known for studying
-quantum communication complexity, and the development of fundamental
-cryptographic primitives such as quantum coin flipping requires complicated
-tools that make it extremely hard to derive explicit protocols.
+Despite steady progress, including practical implementations of quantum key distribution schemes, there are both technological limitations and theoretical barriers. The development of algorithms and protocols exploiting such a quantum network to its full capacity is also hindered by the inherent difficulty at characterizing interactive quantum communication models. As a consequence, only limited techniques are known for studying quantum communication complexity and the development of fundamental cryptographic primitives, such as quantum coin flipping, requires complicated tools. % that make it extremely hard to derive explicit protocols.
 
-The overall aim of this research project is to take a fresh start
-towards quantum communication protocols by approaching their theoretical
-foundations from a new perspective. More precisely, our objectives
-are the following: 
+The overall aim of this research project is to take a fresh start towards quantum communication protocols by approaching their theoretical foundations from a new perspective. More precisely, our objectives are the following: 
 \begin{itemize}
-\item The development of a new framework to study quantum communication
-protocols based on continuous~time Hamiltonian evolution. 
-\item New techniques to obtain strong lower bounds in quantum communication
-complexity and matching efficient protocols. 
-\item Practical and optimal quantum protocols for cryptographic primitives,
-in particular for coin flipping.
+\item The development of a new framework to study quantum communication protocols based on continuous~time Hamiltonian evolution. 
+\item New techniques to obtain strong lower bounds in quantum communication complexity and matching efficient protocols. 
+\item Practical and optimal quantum protocols for cryptographic primitives, in particular for coin flipping.
 \end{itemize}
 
 \subsection{State of the Art}
 
-Communication complexity is a computational model first introduced
-by Yao~\cite{Yao79} where two distant players, Alice and Bob, each
-receive an input, $x$ and $y$, respectively, and their goal is to
-compute a function $f(x,y)$. To this end, they must communicate,
-and the communication complexity is defined as the minimum number
-of bits exchanged by Alice and Bob in order to compute the function
-with error at most $\epsilon$. In addition to being a quite natural
-computational model on its own, communication complexity also found
-many applications, not only for proving bounds via reductions for
-other computational models (decision trees, streaming algorithms),
-but also for more practical problems such as the design of VLSI circuits
-(see also \cite{KN97}). 
+\emph{Communication complexity} is a computational model first introduced by Yao~\cite{Yao79} where two distant players, Alice and Bob, each receive an input, $x$ and $y$, respectively, and their goal is to compute a function $f(x,y)$. To this end, they must communicate and the communication complexity is defined as the minimum number of bits Alice and Bob must exchange in order to compute the function with error at most $\epsilon$. In addition to being quite a natural computational model on its own, communication complexity also found many applications, not only for proving bounds via reductions for other computational models (decision trees, streaming algorithms) but also for more practical problems such as the design of VLSI circuits (see  \cite{KN97}). 
 
-For this reason, communication complexity has been extensively studied
-but progress has been quite slow due to the difficulty at developing
-good lower and upper bound techniques. In particular, the famous log-rank
-conjecture \cite{LS88}, which states that the communication
-complexity of a function is bounded from above by a constant power
-of the rank of its communication matrix $M_{x,y}=f(x,y)$ remains
-open despite decades of attempts to prove it. 
+For this reason, communication complexity has been extensively studied, however,  progress has been quite slow due to the difficulty at developing good lower and upper bound techniques. In particular, the famous log-rank conjecture \cite{LS88}, which states that the communication complexity of a function is bounded from above by a constant power
+of the rank of its communication matrix $M_{x,y}=f(x,y)$ remains open despite decades of attempts to prove it. 
 
-Over the last few years, a new approach to communication complexity
-problems based on information theory {[}define this? Not sure it is
-necessary{]} has attracted a lot of interest. This approach can not
-only be used to prove lower bounds on the usual model, but also leads
-to a new model called information complexity, where the cost of a
-communication protocol no longer corresponds to the length of the
-communicated messages, but rather to their information content (see
-e.g.~\cite{Bra12}). Information complexity is also equivalent to
-amortized communication complexity \cite{BW12},
-and therefore leads to an interactive analogue of Shannon compression
-{[}define shannon compression first maybe? I think it is fine{]}.
-It has recently been shown that some lower bound techniques for communication
-complexity also lower bound information complexity~\cite{KLL+14}.
-These techniques draw an interesting connection with the notion of
-Bell inequalities studied in the context of quantum nonlocality, which
-makes it possible to define natural extensions of these lower bound
-techniques to quantum communication complexity~\cite{LLR12}, an
-extension of communication complexity where the players can exchange
-quantum messages. This line of research is quite promising as the
-set of lower bound techniques for quantum communication complexity
-is currently even more limited than for its classical counterpart. 
+Over the last few years, a new approach to communication complexity problems based on information theory has attracted a lot of interest. This approach can not only be used to prove lower bounds on the usual model but also leads to a new model called \emph{information complexity}, where the cost of a communication protocol no longer corresponds to the length of the communicated messages, but rather to their information content (see e.g.~\cite{Bra12}). Information complexity is also equivalent to amortized communication complexity \cite{BW12} and therefore leads to an interactive analogue of Shannon compression. It has recently been shown that some lower bound techniques for communication complexity also lower bound information complexity~\cite{KLL+14}. These techniques draw an interesting connection with the notion of Bell inequalities studied in the context of quantum nonlocality, which makes it possible to define natural extensions of these lower bound techniques to \emph{quantum communication complexity}~\cite{LLR12}, an extension of communication complexity where the players can exchange quantum messages. %This line of research is quite promising as the set of lower bound techniques for quantum communication complexity is currently even more limited than for its classical counterpart. 
 
-Note that closely related computational models are much better understood,
-such as quantum query complexity {[}define it? WE could say that this
-is the quantum analogue of query complexity or \textquotedblleft decision
-tree complexity\textquotedblright , but we don\textquoteright t have
-enough space to define it in more details{]}, which in the bounded-error
-case is now known to be characterized by a semidefinite program called
-the adversary bound~\cite{LMRSS11}. The proof of this fundamental
-result is facilitated by considering a generalization of the model
-where the goal is not to compute a function but rather to generate
-a quantum state~\cite{AMRR11}. More recently, an alternative proof
-of this was provided by my promoter by considering a continuous-time
-model of quantum query complexity~\cite{BR14}. 
+Note that closely related computational models are much better understood, such as \emph{quantum query complexity}, the quantum analogue of query complexity or \textquotedblleft decision tree complexity\textquotedblright, which in the bounded-error case is now known to be characterized by a semidefinite program called the \emph{adversary bound}~\cite{LMRSS11}. The proof of this fundamental result is facilitated by considering a generalization of the model where the goal is not to compute a function but rather to generate
+a quantum state~\cite{AMRR11}. More recently, an alternative proof of this was provided by my promoter by considering a continuous-time model of quantum query complexity~\cite{BR14}. 
 
-Coin flipping is a fundamental cryptographic primitive where two distrustful
-parties need to remotely generate a shared unbiased random bit. A
-cheating player can try to bias the output bit towards a preferred
-value. For weak coin flipping, each player has a given preferred value:
-for example, Alice wants to bias towards 0 while Bob wants to bias
-towards 1. A weak coin-flipping protocol has bias $\epsilon$ if neither
-Alice nor Bob can force the outcome towards her/his preferred value
-with probability more than $1/2+\epsilon$. For strong coin flipping,
-there is no a priori preferred values, and the protocol has bias $\epsilon$
-if neither Alice nor Bob can force the outcome towards any value with
-probability more than $1/2+\epsilon$. Under information-theoretic
-security, neither weak nor strong coin flipping is possible with non-trivial
-bias in the classical setting: there always exists a player that can
-force any outcome with probability 1. However, the situation is quite
-different in the quantum world. Indeed, strong coin-flipping protocols
-with bias strictly less than $1/2$ have been shown, the best known
-explicit protocol having bias $1/4$~\cite{Ambainis04b}. Nevertheless,
-Kitaev showed a lower bound of $1/\sqrt{2}-1/2$ for the bias of any
-quantum strong coin flipping~\cite{Kitaev03}, so an arbitrary small
-bias is not possible. 
+\emph{Coin flipping} is a fundamental cryptographic primitive where two distrustful parties need to remotely generate a shared unbiased random bit. A cheating player can try to bias the output bit towards a preferred value. For \emph{weak coin flipping}, each player has a given preferred value. A weak coin-flipping protocol has bias $\epsilon$ if neither Alice nor Bob can force the outcome towards her/his preferred value with probability more than $1/2+\epsilon$. Similarly for \emph{strong coin flipping}, there is no a priori preferred values. Under information-theoretic security, neither weak nor strong coin flipping is possible as there always exists a player that can force any outcome with probability 1. {[}CITE?{]} However, in the quantum world, strong coin-flipping protocols with bias strictly less than $1/2$ have been shown and the best known explicit protocol has bias $1/4$~\cite{Ambainis04b}. Nevertheless, Kitaev showed a lower bound of $1/\sqrt{2}-1/2$ for the bias of any quantum strong coin flipping~\cite{Kitaev03}, so an unbiased protocol is not possible. 
 
-As for weak coin flipping, explicit protocols have been shown with
-bias as low as $1/6$~\cite{Mochon05}. In a breakthrough result,
-Mochon even proved in 2007 the existence of a quantum weak coin-flipping
-protocol with bias $\epsilon$ for any $\epsilon>0$, hence showing
-that near-perfect weak coin flipping is theoretically possible~\cite{Mochon07}.
-This fundamental result for quantum cryptography unfortunately comes
-with the important drawback that the proof of existence is non-constructive:
-indeed, it is based on successive reductions from a protocol to different
-versions of so-called point games, a formalism introduced by Kitaev
-in order to study coin flipping. As a consequence, the structure of
-the protocol whose existence is proved is unfortunately lost during
-a long and technical sequence of reductions (the article is 80-page
-long). Moreover, this article was never peer-reviewed, and it took
-years before the proof was systematically verified by independent
-researchers. While this verification also led to a simplified version
-of the proof~\cite{ACG+14} (only 50-page long!), to this date, more
-than 9 years after the original proof of existence, nobody has been
-able to turn it into an explicit weak coin-flipping protocol. This
-is not due to a lack of trying: experts have used various approaches
-ranging from distilling a protocol from the theoretical proof of existence
-to numerical search. For example, despite many optimization techniques,
-the extensive numerical calculations in~\cite{NST14} did not return
-a single protocol with a better bias than what was previously known.
-While this last reference concerns strong coin-flipping protocols,
-the problems are closely related, as it was shown that an explicit
-quantum protocol for weak coin flipping would provide, via black-box
-reductions, optimal protocols for strong coin flipping~\cite{CK09}
-and oblivious transfer (another fundamental cryptographic primitive)
-as well~\cite{CK11}. This makes the absence of explicit weak coin-flipping
-protocols even more frustrating.
+As for weak coin flipping, explicit protocols have been shown with bias as low as $1/6$~\cite{Mochon05}. In a breakthrough result, Mochon even proved in 2007 the existence of a quantum weak coin-flipping protocol with bias $\epsilon$ for any $\epsilon>0$, hence showing that near-perfect weak coin flipping is theoretically possible~\cite{Mochon07}. This fundamental result for quantum cryptography unfortunately was proved non-constructively, by elaborate successive reductions (80 pages) of the protocol to different versions of so-called \emph{point games}, a formalism introduced by Kitaev in order to study coin flipping. Consequently, the structure of the protocol whose existence is proved is unfortunately lost. A systematic verification of this by independent researchers recently led to a simplified proof~\cite{ACG+14} (only 50 pages) and 9 years after, an explicit weak coin-flipping protocol is still unknown, despite various expert approaches ranging from distillation of a protocol using the proof of existence to numerical search~\cite{NST14}. Further, weak coin flipping provides, via black-box reductions, optimal protocols for strong coin flipping~\cite{CK09} and \emph{oblivious transfer} (another fundamental cryptographic primitive)~\cite{CK11}, making the absence of the explicit protocol even more frustrating.
 
 
 \subsection{Research Project}
 
-\textbf{Continuous-time communication.} The main originality of my
-research project is to consider a continuous-time model to study communication
-complexity and cryptographic primitives. This is in sharp contrast
-with the state of the art where virtually all interactive communication
-models assume discrete-time protocols, where the communication travels
-back and forth between the communicating players. The continuous-time
-model I propose to study assumes that the players interact via a shared
-``messaging'' system that can be coupled continuously in time to their
-local workspace. More precisely, assume that Alice and Bob have private
-quantum registers $A$ and $B$, and share a common message register
-$M$. Alice can apply a Hamiltonian $H_{A}$ to her register and an
-interaction Hamiltonian $H_{AM}$ to the combined system composed
-of $A$ and $M$. Similarly Bob can apply $H_{B}$ and $H_{BM}$.
-The complete Hamiltonian may be written as $H=H_{A}\otimes\mathbb{I}_{MB}+H_{AM}\otimes\mathbb{I}_{B}+\mathbb{I}_{A}\otimes H_{MB}+\mathbb{I}_{AM}\otimes H_{B}.$
-Note that the traditional discrete-time communication model can be
-seen as a special case of this model where at any point in time, either
-$H_{AM}$ or $H_{BM}$ is zero. Conversely, any continuous-time protocol
-may be approached by a discrete-time protocol via a Trotter expansion.
-For this reason, the continuous-time model also provides a new approach
-to study the usual discrete-time model. The first task of our PhD
-project will be to formalize this general framework of continuous-time
-communication and its connection the usual discrete-time model, before
-we can use this framework in different contexts, namely communication
-complexity and the design of cryptographic primitives. 
+\textbf{Continuous-time communication.} 
+We take a fresh approach, in stark contrast to the state of the art where virtually all interactive models assume \emph{discrete-time protocols} --- protocols in which information sequentially travels back and forth between the players. We propose to use  a \emph{continuous-time model} where the players interact via a shared ``messaging' system that can be coupled continuously in time to their local workspace. More precisely, assume that Alice and Bob have private quantum registers $A$ and $B$, and share a common message register
+$M$. Alice can apply a Hamiltonian $H_{A}$ to her register and an interaction Hamiltonian $H_{AM}$ to the combined system composed of $A$ and $M$. Similarly Bob can apply $H_{B}$ and $H_{BM}$. The complete Hamiltonian may be written as $H=H_{A}\otimes\mathbb{I}_{MB}+H_{AM}\otimes\mathbb{I}_{B}+\mathbb{I}_{A}\otimes H_{MB}+\mathbb{I}_{AM}\otimes H_{B}.$ Note that the traditional discrete-time communication model can be seen as a special case of this model where at any point in time, either $H_{AM}$ or $H_{BM}$ is zero. Conversely, any continuous-time protocol may be approached by a discrete-time protocol via a Trotter expansion. Therefore, the continuous-time model also provides a new direction to study the usual discrete-time model. The first task of our PhD project will be to formalise this general framework of continuous-time communication and its connection with the usual discrete-time model. %, before we can use this framework in different contexts, namely communication complexity and the design of cryptographic primitives. 
 
-\textbf{Communication complexity.} We can define a continuous-time
-model of communication complexity by considering the time required
-to evolve the system to the desired state as a measure of complexity
-(for this measure to be non-trivial, we need to impose energy constraints,
-in that the norms of $H_{AM}$ and $H_{BM}$ must be bounded by some
-constant $\le1$). An important task will be to prove tight bounds
-between the usual (discrete-time) model and this new model, using
-the general connection described above. From there, we propose to
-develop new techniques to bound the continuous-time communication
-complexity, which will in turn imply new bounds for the usual model.
-Note that the most powerful known methods to prove bounds on communication
-complexity require combinatorial techniques, due to the combinatorial
-structure of interactive protocols where messages are sent back and
-forth. It is quite likely that the algebraic structure of continuous-time
-protocols might lead to a simpler analysis and therefore bound techniques
-that are easier to apply (note that there also exist algebraic bound
-techniques for the usual model of communication complexity, but while
-they are typically easier to apply they are also less powerful and
-therefore sometimes not sufficient). Another modification of the model
-we propose to exploit is an extension to quantum state generation,
-where instead of computing a function $f(x,y)$ (where $x$ and $y$
-are Alice\textquoteright s and Bob\textquoteright s inputs), the goal
-is to create a joint quantum state $\psi_{xy}$. This extension was
-quite useful to simplify the study, up to the full characterization,
-of quantum query complexity, and we hope to benefit from the same
-advantage here. Indeed, even if the initial and final states of a
-protocol are taken from a finite set of possibilities, as is the case
-when computing a function, intermediate states of the protocol can
-be arbitrary, and focusing on the singular properties of the states
-at the beginning and the end of the protocol might obscure the general
-dynamical properties. This is especially true for the continuous-time
-model I propose to explore, since in that case the intermediate states
-of the protocol follow a continuous path in the Hilbert space. In
-order to design new techniques to prove lower bounds on this extended
-model, I propose to combine these new ideas to recent techniques for
-the usual discrete-time models, in particular techniques based on
-information theory, as well as bounds derived from the notion of Bell
-inequalities studied in the context of quantum non-locality {[}see
-above, maybe add the same references here{]}. Finally, we also intend
-to study continuous time models in the purview of classical communication
-complexity where the Schrödinger equation is replaced by appropriate
-Euler Lagrange equations and is expected to yield a unified characterization
-of communication complexity. We intend to study similar questions;
-equivalence between continuous and discrete models and characterization
-of complexity models using new bounding techniques. 
+\textbf{Communication complexity.} 
+We can define \emph{continuous-time communication complexity} (CT CC)  by considering the time required to evolve the system to the desired state (for this to be non-trivial, we impose $H_{AM}$ and $H_{BM}$ is bounded, say $\le1$). An important task would be to prove tight bounds between the \emph{usual} discrete-time model and our model, using the connection described above. Thereafter, we propose to develop new techniques to bound CT CC, which in turn will imply new bounds for the usual model. Most powerful known bounding methods rely on combinatorial techniques since a combinatorial structure arises when messages are sent and received sequentially. We expect that the algebraic structure of continuous-time protocols would make easy yet powerful bounding techniques applicable.  Another modification of the model we propose to harness is an extension to \emph{quantum state generation}, where instead of computing a function $f(x,y)$ from Alice's and Bob's input, the goal is to create a joint quantum state $\psi_{xy}$. My promoter has noted that this extension was already quite useful in simplifying the study, up to the full characterisation, of quantum query complexity. Indeed, even if the initial and final states of a protocol belong to a finite set, intermediate states of the protocol can be arbitrary and focusing on the singular properties of restricted states might obscure the general continuous dynamics. To design new techniques for proving lower bounds on this extended model, we will combine these new ideas to recent techniques for the usual models, in particular techniques based on information theory and Bell inequalities {[} TODO: Add references? {]}. Finally, we also intend to study continuous time models in the purview of classical communication complexity where the Schrödinger equation is replaced by appropriate Euler Lagrange equations and is expected to yield a unified characterisation of communication complexity. We will study similar questions; equivalence between the two types of models and characterise complexity by bounding.
 
 \textbf{Cryptography.} Constructing explicit optimal quantum protocols
 for cryptographic primitives will be among the second main targets

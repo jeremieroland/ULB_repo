@@ -15,8 +15,8 @@
 \usepackage{esint}
 
 %\usepackage{biblatex}
-%\addbibresource
-
+\usepackage[sorting=none,backend=biber,refsection=none]{biblatex}
+\addbibresource{MIS-2015.bib}
 \makeatletter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
@@ -56,7 +56,7 @@
 \usepackage{multicol}
 
 
-\bibliographystyle{unsrt}
+%\bibliographystyle{unsrt}
 %to make separate references
 %\usepackage[sectionbib]{chapterbib}
 %\usepackage[english]{babel}
@@ -104,6 +104,7 @@ Main language chosen = English
 \section{DESCRIPTION OF THE RESEARCH PROJECT}
 
 %\begin{refsection}
+\newrefsection
 
 
 
@@ -156,12 +157,12 @@ computational model on its own, communication complexity also found
 many applications, not only for proving bounds via reductions for
 other computational models (decision trees, streaming algorithms),
 but also for more practical problems such as the design of VLSI circuits
-(see also {[}KN97->add to bibtex file{]}). 
+(see also \cite{KN97}). 
 
 For this reason, communication complexity has been extensively studied
 but progress has been quite slow due to the difficulty at developing
 good lower and upper bound techniques. In particular, the famous log-rank
-conjecture {[}LS88->add to bibtex file{]}, which states that the communication
+conjecture \cite{LS88}, which states that the communication
 complexity of a function is bounded from above by a constant power
 of the rank of its communication matrix $M_{x,y}=f(x,y)$ remains
 open despite decades of attempts to prove it. 
@@ -174,7 +175,7 @@ to a new model called information complexity, where the cost of a
 communication protocol no longer corresponds to the length of the
 communicated messages, but rather to their information content (see
 e.g.~\cite{Bra12}). Information complexity is also equivalent to
-amortized communication complexity {[}BW12->add to bibtex file{]},
+amortized communication complexity \cite{BW12},
 and therefore leads to an interactive analogue of Shannon compression
 {[}define shannon compression first maybe? I think it is fine{]}.
 It has recently been shown that some lower bound techniques for communication
@@ -453,20 +454,13 @@ model
 
 
 \begin{multicols}{2}
-
-%\printbibliography
-
-%\bibliographystyle{jpc}
-\bibliography{MIS-2015}
-
-
+\printbibliography
 \end{multicols}
 
-%\printbibliography
 
 %\end{refsection}
 
-
+\clearpage{}
 \section{ACTIVITIES REPORT ON THE FIRST YEAR OF DOCTORATE}
 
 \clearpage{}
@@ -476,7 +470,7 @@ model
 
 %\newrefsection
 %\begin{refsection}
-
+\newrefsection
 The Centre for Quantum Information and Communication (QuIC) has been
 active in quantum information sciences for more than fifteen years,
 with research contributions ranging from fundamental questions such
@@ -504,16 +498,14 @@ d'Orsay. More recently, the QuIC has developed an important research
 activity in the general field of quantum computer science. In particular,
 my promoter has made important contributions to adiabatic quantum
 computation~\cite{RC02,akr10-pnas,KMOR15,BR14}, algorithms by quantum
-walks~\cite{mnrs11-sicomp,KMOR15}, quantum query complexity~\cite{AMRR11,LR13,BR14}
+walks~\cite{mnrs11-sicomp,KMOR15}, quantum query complexity %~\cite{AMRR11,LR13,BR14}
 and communication complexity~\cite{LLR12,KLL+14,FJKL+15}, all these
 topics being directly or indirectly connected to our doctoral research
 project.
 
-%\begin{multicols}{2}
-
-%\printbibliography
-
-%\end{multicols}
+\begin{multicols}{2}
+\printbibliography
+\end{multicols}
 
 %\end{refsection}
 
@@ -523,7 +515,7 @@ project.
 
 
 \section{SUMMARY OF MASTER'S THESIS OR EQUIVALENT}
-
+\newrefsection
 The Copenhagen Interpretation of Quantum Mechanics (QM) asserts that
 the wave-function is the most complete description, which entails
 that there is an inherent fuzziness in our description of nature.
@@ -560,9 +552,13 @@ of non-locality.
 
 \end{figure}
 
+%\begin{multicols}{2}
+\printbibliography
+%\end{multicols}
 
 
 \section{ADDITIONAL COMMENTS (OPTIONAL)}
+\newrefsection
 
 In the summers of 2015 I had been offered a DAAD-WISE fellowship for
 working in University of Siegen, Germany under Prof Otfried Guehne
@@ -586,8 +582,11 @@ in the MS thesis and they are also expected to be relevant for this
 project.
 
 
+%\begin{multicols}{2}
+\printbibliography
+%\end{multicols}
 
-
+\clearpage{}
 \section{PhD WORK CALENDAR PER MONTH}
 
 A tentative list of tasks has been enumerated below (see also \figref{PhD-tentative-work}).
