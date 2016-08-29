@@ -1,4 +1,4 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
+f#LyX 2.1 created this file. For more info see http://www.lyx.org/
 \lyxformat 474
 \begin_document
 \begin_header
@@ -92,7 +92,7 @@
 \bottommargin 2cm
 \headheight 2cm
 \headsep 2cm
-\footskip 2cm
+\footskip 1.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -1531,9 +1531,18 @@ reference "fig:MS-visual"
 
 \end_inset
 
-) I was able to show, that the notion of contextuality is in fact not necessary~
-\backslash
-cite[arXiv:1607.03498,MSThesis].
+) I was able to show, that the notion of contextuality is in fact not necessary
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AA16,msThesis"
+
+\end_inset
+
+.
  This was achieved by identifying another `classical property' and constructing
  a non-contextual toy-model, serving as a counter-example to the impossibility
  proof.
@@ -1600,10 +1609,19 @@ In the summers of 2015 I had been offered a DAAD-WISE fellowship for working
  Ali Asadian.
  The work was related to extending the Bell's test to continuous `modular'
  variables, topics which constitute the tools of the current proposal.
- More specifically, we had proposed~
-\backslash
-cite[AA15] a test of local realism based on correlation measurements of
- continuum valued functions of positions and momenta, known as modular variables.
+ More specifically, we had proposed
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AA15"
+
+\end_inset
+
+ a test of local realism based on correlation measurements of continuum
+ valued functions of positions and momenta, known as modular variables.
  The Wigner representations of these observables are bounded in phase space
  and, therefore, the associated inequality holds for any state described
  by a non-negative Wigner function.
@@ -1620,14 +1638,135 @@ cite[AA15] a test of local realism based on correlation measurements of
  expected to be relevant for this project.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "msThesisRef"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 PhD WORK CALENDAR PER MONTH
 \end_layout
 
 \begin_layout Standard
+A tentative list of tasks has been enumerated below (see also 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:PhD-tentative-work"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+2016
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+October - December: Reading of the pre-requisite literature
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+2017
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+January - April: A.1 Constructing the framework for continuous time communication
+ protocols
+\end_layout
+
+\begin_layout Itemize
+May - August: A.2 Finding relations between continuous and discrete time
+ protocols
+\end_layout
+
+\begin_layout Itemize
+September - December: B.1 Developing techniques to reduce a continuous time
+ protocol to its discrete counter-part
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+2018
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+January - April: B.2 Work on characterising communication complexity of quantum
+ state generation protocols
+\end_layout
+
+\begin_layout Itemize
+May - August: B.3 Attempt determination of classical communication complexity
+ from continuous time models
+\end_layout
+
+\begin_layout Itemize
+September - December: C.1 Find a continuous-time weak coin flipping algorithm
+ with bias 
+\begin_inset Formula $<1/6$
+\end_inset
+
 
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+2019
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+January - April: C.2 Obtain an optimal continuous time weak coin-flipping
+ protocol
+\end_layout
+
+\begin_layout Itemize
+May - August: C.3 Construct optimal continuous time protocols for other primitive
+s, including oblivious transfer
+\end_layout
+
+\begin_layout Itemize
+September - December: C.4 Systematically reduce the continuous time protocols
+ to obtain discrete time optimal protocols for the basic cryptographic primitive
+s
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+2020
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+January - April: C.5 Appropriately quantify cryptographic quantum communication
+ complexity
+\end_layout
+
+\begin_layout Itemize
+May - August: Conclude the results, explore the implications and write the
+ thesis.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
