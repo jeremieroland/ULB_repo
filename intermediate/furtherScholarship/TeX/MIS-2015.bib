@@ -466,7 +466,7 @@
 	Archiveprefix = {arXiv},
 	Arxivid = {1012.2112},
         Author = {Ambainis, Andris and Magnin, Lo\"{i}ck and Roetteler, Martin and Roland, J\'{e}r\'{e}mie},
-	Booktitle = {26th IEEE Conference on Computational Complexity (CCC'11)},
+	Booktitle = {26th CCC},
 	Doi = {10.1109/CCC.2011.24},
 	Eprint = {1012.2112},
 	Pages = {167--177},
@@ -702,7 +702,8 @@ year = {2008}
 	volume = {65},
 	pages = {042308},
 	year = {2002},
-	eprint = {quant-ph/0107015},
+archivePrefix = {arXiv},
+eprint = {quant-ph/0107015},
 	doi = {10.1103/PhysRevA.65.042308}}
 
 @Article{ akr10-pnas,
@@ -713,6 +714,7 @@ year = {2008}
 	volume = {107},
 	year = {2010},
 	doi = {10.1073/pnas.1002116107},
+archivePrefix = {arXiv},
 	eprint = {0912.0746},
 	number = {28},
 	issue = {28}
@@ -727,6 +729,7 @@ year = {2008}
 	volume = {40},
 	number = {1},
 	doi = {10.1137/090745854},
+archivePrefix = {arXiv},
 	eprint ={quant-ph/0608026}
 }
 
@@ -1012,22 +1015,30 @@ year = {2009}
 @inproceedings{BR14,
   title={A universal adiabatic quantum query algorithm},
   author={Brandeho, Mathieu and Roland, J{\'e}r{\'e}mie},
-  booktitle = {10th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC'15)},
+  booktitle = {10th TQC},
+  volume =	{44},
+  pages =	{163--179},
+  series =	{LIPIcs},
   Archiveprefix = {arXiv},
   Arxivid = {1409.3558},
   Eprint = {1409.3558},
   year={2015},
-  note={To appear}
+  doi =		{10.4230/LIPIcs.TQC.2015.163}
 }
 
 
 @article{KLL+14,
 	Author = {Kerenidis, Iordanis and Laplante, Sophie and Lerays, Virginie and Roland, J\'{e}r\'{e}mie and Xiao, David},
+  Archiveprefix = {arXiv},
 	Eprint = {1204.1505},
 	Title = {Lower bounds on information complexity via zero-communication protocols and applications},
 	Journal = {SIAM J. Comput.},
-	Year = {2014},
-	note = {To appear}}
+volume = {44},
+number = {5},
+pages = {1550-1572},
+year = {2015},
+doi = {10.1137/130928273}
+}
 
 @article{MR14,
 author = {Magnin, Lo\"{\i}ck and Roland, J\'{e}r\'{e}mie},
@@ -1101,15 +1112,11 @@ year = {2013}
 	Archiveprefix = {arXiv},
 	Arxivid = {1203.4155},
 	Author = {Laplante, Sophie and Lerays, Virginie and Roland, J\'{e}r\'{e}mie},
-	Booktitle = {39th International Colloquium on Automata, Languages and Programming (ICALP'12)},
-	Date-Modified = {2012-07-20 08:40:55 +0000},
+	Booktitle = {39th ICALP},
 	Doi = {10.1007/978-3-642-31594-7_52},
 	Eprint = {1203.4155},
 	Pages = {617--628},
-	Publisher = {Springer},
-	Series = {Lecture Notes in Computer Science},
 	Title = {Classical and quantum partition bound and detector inefficiency},
-	Volume = {7391},
 	Year = {2012}}
 
 @inproceedings{LR11,
@@ -1141,8 +1148,10 @@ archivePrefix = {arXiv},
 arxivId = {1002.2419},
 author = {Krovi, Hari and Magniez, Fr\'{e}d\'{e}ric and Ozols, Maris and Roland, J\'{e}r\'{e}mie},
 journal = {Algorithmica},
+volume = {74},
+number = {2},
+pages = {851--907},
 doi = {10.1007/s00453-015-9979-8},
-note = {Published online},
 eprint = {1002.2419},
 title = {{Quantum walks can find a marked element on any graph}},
 year = {2015}
@@ -1350,8 +1359,14 @@ arxivId = {1402.7166},
 author = {Aharonov, Dorit and Chailloux, Andr\'{e} and Ganz, Maor and Kerenidis, Iordanis and Magnin, Lo\"{i}ck},
 eprint = {1402.7166},
 journal = {arXiv:1402.7166},
-title = {{A simpler proof of existence of quantum weak coin flipping with arbitrarily small bias}},
-year = {2014}
+title = {{A simpler proof of the existence of quantum weak coin flipping with arbitrarily small bias}},
+journal = {SIAM J. Comput},
+volume = {45},
+number = {3},
+pages = {633-679},
+year = {2016},
+doi = {10.1137/14096387X}
+
 }
 
 @article{Mochon05,
@@ -1369,13 +1384,12 @@ year = {2005}
 }
 
 
-@article{Mochon07,
+@eprint{Mochon07,
 archivePrefix = {arXiv},
 arxivId = {0711.4114},
 author = {Mochon, Carlos},
 eprint = {0711.4114},
 title = {{Quantum weak coin flipping with arbitrarily small bias}},
-journal = {arXiv:0711.4114},
 year = {2007}
 }
 
@@ -1418,7 +1432,7 @@ year = {2014}
 @unpublished{Kitaev03,
 author={A. Kitaev},
 title ={Quantum coin flipping},
-note = {Talk at the 6th workshop on Quantum Information Processing},
+note = {Talk at the 6th QIP},
 year={2003}
 }
 
@@ -1428,7 +1442,7 @@ arxivId = {quant-ph/0204022},
 author = {Ambainis, Andris},
 doi = {10.1016/j.jcss.2003.07.010},
 eprint = {0204022},
-journal = {Journal of Computer and System Sciences},
+journal = {JCSS},
 number = {2},
 pages = {398--416},
 primaryClass = {quant-ph},
@@ -1438,13 +1452,12 @@ year = {2004}
 }
 
 
-@article{NST14,
+@eprint{NST14,
 archivePrefix = {arXiv},
 arxivId = {1403.0505},
 author = {Nayak, Ashwin and Sikora, Jamie and Tun\c{c}el, Levent},
 eprint = {1403.0505},
 title = {{A search for quantum coin-flipping protocols using optimization techniques}},
-journal = {arXiv:1403.0505},
 year = {2014}
 }
 
@@ -1518,13 +1531,14 @@ year = {2012}
 	Volume = {72},
 	Year = {2005}}
 
-@article{FJKL+15,
-author = {Fontes, Lila and Jain, Rahul and Kerenidis, Iordanis and Lauri\`{e}re, Mathieu and Laplante, Sophie and Roland, J\'{e}r\'{e}mie},
-journal = {ECCC},
-volume = {28},
+@inproceedings{FJKL+15,
+author = {Fontes, Lila and Jain, Rahul and Kerenidis, Iordanis and Laplante, Sophie and Lauri\`{e}re, Mathieu and Roland, J\'{e}r\'{e}mie},
+booktitle = {42nd ICALP},
 title = {{Relative Discrepancy does not separate Information and Communication Complexity}},
-url = {http://eccc.hpi-web.de/report/2015/028/},
-year = {2015}
+	Pages = {506--516},
+	Series = {LNCS},
+	Volume = {9134},
+	Year = {2015}
 }
 
 @article{LSHL+10,
@@ -1540,6 +1554,33 @@ volume = {4},
 year = {2010}
 }
 
+
+@inproceedings{LS88,
+author = {Lovasz, L. and Saks, M.},
+booktitle = {29th FOCS},
+doi = {10.1109/SFCS.1988.21924},
+pages = {81--90},
+title = {{Lattices, Mobius functions and communications complexity}},
+year = {1988}
+}
+
+
+@book{KN97,
+author = {Kushilevitz, Eyal and Nisan, Noam},
+publisher = {Cambridge University Press},
+title = {{Communication Complexity}},
+year = {1997}
+}
+
+@inproceedings{BW12,
+archivePrefix = {arXiv},
+arxivId = {1112.2000},
+author = {Braverman, Mark and Weinstein, Omri},
+booktitle = {16th RANDOM},
+doi = {10.1007/978-3-642-32512-0_39},
+eprint = {1112.2000},
+year = {2012}
+}
 
 
 
