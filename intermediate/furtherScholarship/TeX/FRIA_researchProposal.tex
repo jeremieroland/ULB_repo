@@ -1,21 +1,39 @@
 %% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[12pt,british]{article}
+\documentclass[12pt,british,sort&compress]{article}
 \usepackage{mathptmx}
 \renewcommand{\familydefault}{\rmdefault}
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \usepackage{geometry}
-\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=2cm,headsep=2cm,footskip=2cm}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=2cm,headsep=2cm,footskip=1.5cm}
+\usepackage{refstyle}
+\usepackage{float}
+\usepackage{rotfloat}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{esint}
 
+%\usepackage{biblatex}
+\usepackage[sorting=none,backend=biber,refsection=none]{biblatex}
+\addbibresource{MIS-2015.bib}
 \makeatletter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+
+\AtBeginDocument{\providecommand\figref[1]{\ref{fig:#1}}}
 %% Because html converters don't know tabularnewline
 \providecommand{\tabularnewline}{\\}
+\RS@ifundefined{subref}
+  {\def\RSsubtxt{section~}\newref{sub}{name = \RSsubtxt}}
+  {}
+\RS@ifundefined{thmref}
+  {\def\RSthmtxt{theorem~}\newref{thm}{name = \RSthmtxt}}
+  {}
+\RS@ifundefined{lemref}
+  {\def\RSlemtxt{lemma~}\newref{lem}{name = \RSlemtxt}}
+  {}
+
 
 \@ifundefined{date}{}{\date{}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
@@ -38,16 +56,17 @@
 \usepackage{multicol}
 
 
+%\bibliographystyle{unsrt}
 %to make separate references
 %\usepackage[sectionbib]{chapterbib}
 %\usepackage[english]{babel}
 %\usepackage{biblatex}
-\usepackage[style=authoryear,backend=biber,refsection=none]{biblatex}
-\bibliography{MIS2015}
-% \addbibresource{{/home/atul/SparkleShare/ULB repo/intermediate/furtherScholarship/tex/MIS2015.bib}}
-% \addbibresource{{/home/atul/SparkleShare/ULB repo/intermediate/furtherScholarship/tex/MIS2015}}
-% \addbibresource{{MIS2015}}
-% \addbibresource{{MIS2015.bib}}
+%\usepackage[style=authoryear,backend=biber,refsection=none]{biblatex}
+%\bibliography{MIS2015.bib}
+%\addbibresource{{/home/atul/SparkleShare/ULB repo/intermediate/furtherScholarship/tex/MIS2015.bib}}
+%\addbibresource{{/home/atul/SparkleShare/ULB repo/intermediate/furtherScholarship/tex/MIS2015}}
+%\addbibresource{{MIS2015}}
+%\addbibresource{{MIS2015.bib}}
 
 \makeatother
 
@@ -85,6 +104,7 @@ Main language chosen = English
 \section{DESCRIPTION OF THE RESEARCH PROJECT}
 
 %\begin{refsection}
+\newrefsection
 
 
 
@@ -137,12 +157,12 @@ computational model on its own, communication complexity also found
 many applications, not only for proving bounds via reductions for
 other computational models (decision trees, streaming algorithms),
 but also for more practical problems such as the design of VLSI circuits
-(see also \cite{KN97}). 
+(see also {[}KN97->add to bibtex file{]}). 
 
 For this reason, communication complexity has been extensively studied
 but progress has been quite slow due to the difficulty at developing
 good lower and upper bound techniques. In particular, the famous log-rank
-conjecture \cite{LS88}, which states that the communication
+conjecture {[}LS88->add to bibtex file{]}, which states that the communication
 complexity of a function is bounded from above by a constant power
 of the rank of its communication matrix $M_{x,y}=f(x,y)$ remains
 open despite decades of attempts to prove it. 
@@ -155,7 +175,7 @@ to a new model called information complexity, where the cost of a
 communication protocol no longer corresponds to the length of the
 communicated messages, but rather to their information content (see
 e.g.~\cite{Bra12}). Information complexity is also equivalent to
-amortized communication complexity \cite{BW12},
+amortized communication complexity {[}BW12->add to bibtex file{]},
 and therefore leads to an interactive analogue of Shannon compression
 {[}define shannon compression first maybe? I think it is fine{]}.
 It has recently been shown that some lower bound techniques for communication
@@ -310,19 +330,20 @@ of complexity models using new bounding techniques.
 
 \textbf{Cryptography.} Constructing explicit optimal quantum protocols
 for cryptographic primitives will be among the second main targets
-of this project (see Figure XXX). We will first focus on weak coin
-flipping, not only because it can lead via reductions to protocols
-for other primitives such as strong coin flipping and bit commitment~\cite{CK09,CK11},
-but also because my promoter has already obtained some promising preliminary
-results. More precisely, he has recently discovered that the best
-known quantum protocol for weak coin flipping~\cite{Mochon05}, achieving
-bias $1/6$, can be obtained by discretizing a continuous-time communication
-protocol of the type we have defined above. This construction gives
-more insight on how the protocol works and therefore provides a new
-approach to extend it and break the limit of bias $1/6$, which resisted
-all researchers for more than a decade. Indeed, while Mochon's original
-construction requires taking the limit of an infinite number of discrete
-steps, this new construction immediately yields a protocol as a continuous
+of this project (see \figref{Expected-Research-Flow}). We will first
+focus on weak coin flipping, not only because it can lead via reductions
+to protocols for other primitives such as strong coin flipping and
+bit commitment~\cite{CK09,CK11}, but also because my promoter has
+already obtained some promising preliminary results. More precisely,
+he has recently discovered that the best known quantum protocol for
+weak coin flipping~\cite{Mochon05}, achieving bias $1/6$, can be
+obtained by discretizing a continuous-time communication protocol
+of the type we have defined above. This construction gives more insight
+on how the protocol works and therefore provides a new approach to
+extend it and break the limit of bias $1/6$, which resisted all researchers
+for more than a decade. Indeed, while Mochon's original construction
+requires taking the limit of an infinite number of discrete steps,
+this new construction immediately yields a protocol as a continuous
 evolution, which is easier to analyze and provides more intuition.
 Our strategy will be to exploit this new intuition to finally break
 the barrier corresponding to bias $1/6$. In order to do so, we propose
@@ -388,7 +409,7 @@ considered with the history state being harnessed to detect cheating.
 
 \subsection{Work Plan}
 
-Here is the general structure of our work plan (see also Figure XXX
+Here is the general structure of our work plan (see also \figref{Expected-Research-Flow}
 below).
 \begin{enumerate}
 \item (A) Continuous-time communication 
@@ -421,28 +442,25 @@ model
 
 \subsection{Figures}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[width=0.8\paperwidth]{researchDiagram}
+\includegraphics[width=0.98\textwidth]{researchDiagram}
 \par\end{centering}
 
-\caption{Overview}
+\caption{Expected Research Flow\label{fig:Expected-Research-Flow}}
 
 
 \end{figure}
 
 
-%\begin{multicols}{2}
-
+\begin{multicols}{2}
 \printbibliography
+\end{multicols}
 
-%\end{multicols}
-
-%\printbibliography
 
 %\end{refsection}
 
-
+\clearpage{}
 \section{ACTIVITIES REPORT ON THE FIRST YEAR OF DOCTORATE}
 
 \clearpage{}
@@ -450,9 +468,9 @@ model
 
 \section{DESCRIPTION OF THE WORK ENVIRONMENT}
 
-\newrefsection
+%\newrefsection
 %\begin{refsection}
-
+\newrefsection
 The Centre for Quantum Information and Communication (QuIC) has been
 active in quantum information sciences for more than fifteen years,
 with research contributions ranging from fundamental questions such
@@ -480,24 +498,24 @@ d'Orsay. More recently, the QuIC has developed an important research
 activity in the general field of quantum computer science. In particular,
 my promoter has made important contributions to adiabatic quantum
 computation~\cite{RC02,akr10-pnas,KMOR15,BR14}, algorithms by quantum
-walks~\cite{mnrs11-sicomp,KMOR15}, quantum query complexity~\cite{AMRR11,LR13,BR14}
+walks~\cite{mnrs11-sicomp,KMOR15}, quantum query complexity %~\cite{AMRR11,LR13,BR14}
 and communication complexity~\cite{LLR12,KLL+14,FJKL+15}, all these
 topics being directly or indirectly connected to our doctoral research
 project.
 
-%\begin{multicols}{2}
-
+\begin{multicols}{2}
 \printbibliography
-
-%\end{multicols}
+\end{multicols}
 
 %\end{refsection}
 
 
 
+\clearpage{}
+
 
 \section{SUMMARY OF MASTER'S THESIS OR EQUIVALENT}
-
+\newrefsection
 The Copenhagen Interpretation of Quantum Mechanics (QM) asserts that
 the wave-function is the most complete description, which entails
 that there is an inherent fuzziness in our description of nature.
@@ -507,36 +525,125 @@ of physical trajectories. Various interesting questions arise, solely
 by the existence of such a description; doesn't it contradict the
 uncertainty principle, for instance. Most of these questions were
 found to have been addressed satisfactorily in the literature. There
-was, however, one question, whose answer has become the subject of
-his investigation; that of the paradoxical co-existence of contextuality
+was, however, one question, whose answer became the subject of my
+investigation; that of the paradoxical co-existence of contextuality
 and BM. In a theory that can predict the value of operators, the value
-an operator takes, must depend on the state of the system (including
+an operator takes must depend on the state of the system (including
 hidden variables). Contextuality arguments show that the value an
 operator takes, must also depend on the complete set of compatible
 operators, to be consistent with QM. BM being deterministic, is at
-complete odds with this notion. After various attempts he was able
-to show, that the notion of contextuality is in fact not necessary.
-This was achieved by identifying another `classical property' and
-constructing a non-contextual toy-model, serving as a counter-example
-to the impossibility proof. The toy model has been generalised to
-a discrete but arbitrarily sized Hilbert space, consistent with all
-predictions of QM. Implications of violation of this `classical property'
-were explored, in particular, to the notion of non-locality.
+complete odds with this notion. After various attempts (see \figref{MS-visual})
+I was able to show, that the notion of contextuality is in fact not
+necessary~\cite{AA16,msThesis}. This was achieved by identifying
+another `classical property' and constructing a non-contextual toy-model,
+serving as a counter-example to the impossibility proof. The toy model
+has been generalised to a discrete but arbitrarily sized Hilbert space,
+consistent with all predictions of QM. Implications of violation of
+this `classical property' were explored, in particular, to the notion
+of non-locality.
 
-\begin{figure}
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[bb=0bp 0bp 744bp 1052bp,width=0.5\paperwidth]{flow}
+\includegraphics[width=0.45\paperwidth]{flow}
 \par\end{centering}
 
-\caption{Summary of progress flow. Bold faced titles represent new results.}
+\caption{Summary of progress flow. Bold faced titles represent new results.\label{fig:MS-visual}}
 
 
 \end{figure}
 
+%\begin{multicols}{2}
+\printbibliography
+%\end{multicols}
 
 
 \section{ADDITIONAL COMMENTS (OPTIONAL)}
+\newrefsection
+
+In the summers of 2015 I had been offered a DAAD-WISE fellowship for
+working in University of Siegen, Germany under Prof Otfried Guehne
+and Dr. Ali Asadian. The work was related to extending the Bell's
+test to continuous `modular' variables, topics which constitute the
+tools of the current proposal. More specifically, we had proposed~\cite{AA15}
+a test of local realism based on correlation measurements of continuum
+valued functions of positions and momenta, known as modular variables.
+The Wigner representations of these observables are bounded in phase
+space and, therefore, the associated inequality holds for any state
+described by a non-negative Wigner function. This agrees with Bell\textquoteright s
+remark that positive Wigner functions, serving as a valid probability
+distribution over local (hidden) phase-space coordinates, do not reveal
+nonlocality. We constructed a class of entangled states resulting
+in a violation of the inequality and thus truly demonstrated nonlocality
+in phase space. We showed that the states can be realized through
+grating techniques in spacelike separated interferometric setups.
+The nonlocality is verified from the spatial correlation data that
+is collected from the screens. Results from this project were used
+in the MS thesis and they are also expected to be relevant for this
+project.
 
 
+%\begin{multicols}{2}
+\printbibliography
+%\end{multicols}
+
+\clearpage{}
 \section{PhD WORK CALENDAR PER MONTH}
+
+A tentative list of tasks has been enumerated below (see also \figref{PhD-tentative-work}).
+\begin{itemize}
+\item 2016
+
+\begin{itemize}
+\item October - December: Reading of the pre-requisite literature
+\end{itemize}
+\item 2017
+
+\begin{itemize}
+\item January - April: A.1 Constructing the framework for continuous time
+communication protocols
+\item May - August: A.2 Finding relations between continuous and discrete
+time protocols
+\item September - December: B.1 Developing techniques to reduce a continuous
+time protocol to its discrete counter-part
+\end{itemize}
+\item 2018
+
+\begin{itemize}
+\item January - April: B.2 Work on characterising communication complexity
+of quantum state generation protocols
+\item May - August: B.3 Attempt determination of classical communication
+complexity from continuous time models
+\item September - December: C.1 Find a continuous-time weak coin flipping
+algorithm with bias $<1/6$
+\end{itemize}
+\item 2019
+
+\begin{itemize}
+\item January - April: C.2 Obtain an optimal continuous time weak coin-flipping
+protocol
+\item May - August: C.3 Construct optimal continuous time protocols for
+other primitives, including oblivious transfer
+\item September - December: C.4 Systematically reduce the continuous time
+protocols to obtain discrete time optimal protocols for the basic
+cryptographic primitives
+\end{itemize}
+\item 2020
+
+\begin{itemize}
+\item January - April: C.5 Appropriately quantify cryptographic quantum
+communication complexity
+\item May - August: Conclude the results, explore the implications and write
+the thesis.
+\end{itemize}
+\end{itemize}
+\begin{sidewaysfigure}
+\begin{centering}
+\includegraphics[width=0.9\paperwidth]{calendar}
+\par\end{centering}
+
+\caption{PhD tentative work schedule \label{fig:PhD-tentative-work}}
+
+
+\end{sidewaysfigure}
+
 \end{document}
