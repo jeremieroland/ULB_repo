@@ -1,3 +1,7 @@
+titre de long: Une approche variable continue vers Quantum Cryptography et Communication Complexité.
+
+Titre court: VC Quant Crypt et Comm. Complexité (So this wasn't needed)
+
 Les modèles actuel de traitement de l'information sont fondamentalement limités en terne de vitesse, d'efficacité, de sécurité et de privacité car ils reposent sur une représentation simplifiée du monde, basée sur la physique classique. Depuis quelques décades, la recherche en information quantique promet de casser cette barrière en atteignant la sécurité et l'efficacité maximales permises par les lois de la physique, suggérant un futur réseau à grande échelle d'appareils quantiques communiquant efficacement et de manière sécurisée.
 
 Néanmoins, le développement d'algorithmes et de protocoles exploitant optimalement un tel réseau est limité par la difficulté de caractériser des modèles interactifs de communication quantique. C'est le cas pour la complexité de communication quantique, où peu de techniques de bornes inférieures sont connues, mais aussi pour les primitives cryptographiques, où l'on sait par exemple qu'une primitive fondamentale comme le tirage à pile ou face faible inconditionnellement sûr est possible, bien qu'aucun protocole explicite ne soit connu.
