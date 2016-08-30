@@ -231,6 +231,97 @@ Main language chosen = English
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align left
+This part includes the following elements:
+\end_layout
+
+\begin_layout Enumerate
+\align left
+Description of the research project 
+\end_layout
+
+\begin_layout Enumerate
+\align left
+
+\emph on
+Activities report on the first year of doctorate (ONLY for 1st grant - 2nd
+ year applicants)* 
+\end_layout
+
+\begin_layout Enumerate
+\align left
+Description of the work environment 
+\end_layout
+
+\begin_layout Enumerate
+\align left
+Summary of the master’s thesis or equivalent 
+\end_layout
+
+\begin_layout Enumerate
+\align left
+Additional comments (optional) 
+\end_layout
+
+\begin_layout Enumerate
+\align left
+PhD work calendar per month
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+
+\emph on
+* ``1st grant - 2nd year'' applicants have already worked on a full-time
+ basis for one year or more on the PhD project submitted to the FRIA.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+The FRIA insists on strict compliance of the number of pages allowed for
+ documents that shall be enclosed with the application form and stresses
+ again the sovereign consideration of the Juries in case the file would
+ exceed the applicable page limit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 

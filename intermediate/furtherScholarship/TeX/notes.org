@@ -1,0 +1,7 @@
+* Broken references
+** Mochon07
+** NST14
+* Citation for "Under information-theoretic security, neither weak nor strong coin flipping is possible as there
+always exists a player that can force any outcome with probability 1."
+* Add Bell Inequality reference (find a TODO)
+* Continuous variable cryptography citation

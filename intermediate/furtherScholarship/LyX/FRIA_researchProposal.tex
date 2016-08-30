@@ -10,6 +10,7 @@
 \usepackage{refstyle}
 \usepackage{float}
 \usepackage{rotfloat}
+\usepackage{calc}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{esint}
@@ -93,6 +94,52 @@ SEMAPHORE Application ID & 29379721\tabularnewline
 Main language chosen = English
 \par\end{center}
 
+\vfill{}
+
+
+\fbox{\begin{minipage}[c][1\totalheight][t]{1\textwidth}%
+\begin{flushleft}
+This part includes the following elements:
+\par\end{flushleft}
+\begin{enumerate}
+\item \begin{flushleft}
+Description of the research project 
+\par\end{flushleft}
+\item \begin{flushleft}
+\emph{Activities report on the first year of doctorate (ONLY for 1st
+grant - 2nd year applicants){*} }
+\par\end{flushleft}
+\item \begin{flushleft}
+Description of the work environment 
+\par\end{flushleft}
+\item \begin{flushleft}
+Summary of the master\textquoteright s thesis or equivalent 
+\par\end{flushleft}
+\item \begin{flushleft}
+Additional comments (optional) 
+\par\end{flushleft}
+\item \begin{flushleft}
+PhD work calendar per month
+\par\end{flushleft}
+\end{enumerate}
+\begin{flushleft}
+\emph{{*} ``1st grant - 2nd year'' applicants have already worked
+on a full-time basis for one year or more on the PhD project submitted
+to the FRIA.}\\
+
+\par\end{flushleft}
+
+\begin{flushleft}
+The FRIA insists on strict compliance of the number of pages allowed
+for documents that shall be enclosed with the application form and
+stresses again the sovereign consideration of the Juries in case the
+file would exceed the applicable page limit.
+\par\end{flushleft}%
+\end{minipage}}
+
+\vfill{}
+
+
 \clearpage{}
 
 \pagenumbering{arabic}
@@ -153,12 +200,12 @@ computational model on its own, communication complexity also found
 many applications, not only for proving bounds via reductions for
 other computational models (decision trees, streaming algorithms),
 but also for more practical problems such as the design of VLSI circuits
-(see also \cite{KN97}). 
+(see also {[}KN97->add to bibtex file{]}). 
 
 For this reason, communication complexity has been extensively studied
 but progress has been quite slow due to the difficulty at developing
 good lower and upper bound techniques. In particular, the famous log-rank
-conjecture \cite{LS88}, which states that the communication
+conjecture {[}LS88->add to bibtex file{]}, which states that the communication
 complexity of a function is bounded from above by a constant power
 of the rank of its communication matrix $M_{x,y}=f(x,y)$ remains
 open despite decades of attempts to prove it. 
@@ -171,7 +218,7 @@ to a new model called information complexity, where the cost of a
 communication protocol no longer corresponds to the length of the
 communicated messages, but rather to their information content (see
 e.g.~\cite{Bra12}). Information complexity is also equivalent to
-amortized communication complexity \cite{BW12},
+amortized communication complexity {[}BW12->add to bibtex file{]},
 and therefore leads to an interactive analogue of Shannon compression
 {[}define shannon compression first maybe? I think it is fine{]}.
 It has recently been shown that some lower bound techniques for communication
