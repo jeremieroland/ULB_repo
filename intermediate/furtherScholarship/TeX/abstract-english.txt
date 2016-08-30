@@ -1,6 +1,6 @@
 Title: A continuous-time approach towards Quantum Cryptography and Communication Complexity.
 
-Shortened: CV Quantum Crypt. & Comm. Complexity
+Shortened: CT Quantum Crypt. & Comm. Complexity
 
 Current information processing models are fundamentally limited in terms of speed, efficiency, security and privacy, as they assume a simplified representation of the world, relying on classical physics. Ongoing research in the field of quantum information processing promises to break this barrier by achieving the highest security and efficiency allowed by the laws of physics, which suggests that future large-scale network of computing devices will be able to communicate both efficiently and securely using quantum resources.
 
